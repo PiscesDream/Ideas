@@ -1,0 +1,82 @@
+#project _2_0
+#   parents: active system
+
+from config import default_gene, default_hunger_threshold
+
+class biont(object):
+    
+    def __init__(self, gene, hunger_threshold, age_rate, hunger_rate):        
+        self.age = 1.0
+        self.hunger = 1.0
+        self.age_rate = age_rate
+        self.hunger_rate = hunger_rate
+        self.hunger_threshold = hunger_threshold
+
+        self.gene = gene
+
+    def get_age(self):
+	return int(self.age*100)
+
+    def aging(self):
+        self.hunger -= self.hunger_rate
+        if self.hunger < self.hunger_threshold:
+            self.age -= 2 * self.age_rate
+        else:
+            self.age -= self.age_rate
+        if self.hunger < 0 or self.age < 0:
+            return False
+        else:
+            return True
+
+    def fit(self, eng):
+        self.hunger += eng
+        if self.hunger > 1.0:
+            self.hunger = 1.0               
+
+class plant(object):
+
+    def __init__(self, biomass, growth_r):
+        self.biomass = biomass
+        self.growth = growth
+        self.growth_r = growth_r
+
+    def reduce(self, delta):       
+        self.amount -= delta
+        if self.amout < 0:
+            return False
+        else:
+            return True
+
+    def growth(self):
+        self.amount += self.growth_r
+
+class eco_sys(object):
+    
+    def __init__(self, 
+                    maxarea = 100, init_plant = 5, init_biomass = 10, p_produce_iter = 10, p_growth_r = 0.3,
+                    init_biont = 20, hunger_r = 0.05, aging_r = 0.05, b_produce_iter = 7,
+                 maxiter = 100):
+        
+        bionts = []
+        for i in xrange(init_biont):
+            bionts.append( biont(default_gene, hunger_threshold = default_hunger_threshold, age_rate = aging_r, 
+    	       		          hunger_rate = hunger_r) )
+        plants = []
+        for i in xrange(init_plant):
+            plants.append( plant(biomass = init_biomass, growth_r = p_growth_r) )
+
+        iteration = 1
+        while iteration < maxiter:
+            if iteration % p_produce_iter:                
+                plants.append( plant(biomass = init_biomass, growth_r = default_hunger_thresold) )
+            if iteration % b_produce_iter:
+                bionts.append( biont(default_gene, hunger_threshold = p_growth_r,
+				     age_rate = aging_r, hunger_rate = hunger_r) )
+
+	    for biont in bionts:
+    		if biont.aging():
+                 
+		    
+
+if __name__ == '__main__':
+    eco_sys()
