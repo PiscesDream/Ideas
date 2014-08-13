@@ -40,12 +40,12 @@ if __name__ == '__main__':
 
     print 'apriori is finding connection...'
 #    ap = apriori.Apriori(map(set, x[y=='World News']), 0.04, 0.6)
-    ap = apriori.Apriori(map(set, x), 0.04, 0.8)
+    ap = apriori.Apriori(map(set, x), 0.04, 0.5)
     pprint(ap.freq_set()[0])
     ap.pprint_rules()
 
 
-    training_rate = 0.8
+    training_rate = 0.01
     split_ind = m * training_rate
     train_x = x[:split_ind]
     train_y = y[:split_ind]
