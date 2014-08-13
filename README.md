@@ -13,9 +13,9 @@ What are included
 ---
 
 * Project Based on CI
-  Swarm intelligent              
-  Agent-oriented models
-  Generic programming/ Evolutions
+  * Swarm intelligent              
+  * Agent-oriented models
+  * Generic programming/ Evolutions
 * Fun project using ML
 * Some game project
 * Other stuff
