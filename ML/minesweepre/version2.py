@@ -58,9 +58,9 @@ font = pygame.font.Font('freesansbold.ttf', 16)
 
 
 class Field(object): #定义地块对象类
-                          
-    def __init__(self, ismine = 0):
-        self.ismine = ismine
+
+    def __init__(self, ismine = 0):
+        self.ismine = ismine
         self.digged = False
         self.flagged = False
         self.image = image["field"]
