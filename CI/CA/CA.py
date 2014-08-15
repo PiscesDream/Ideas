@@ -1,5 +1,5 @@
 from copy import deepcopy
-from numpy import ones_like, array
+from numpy import ones_like, array, zeros
 import matplotlib.pyplot as plt
 
 class CA(object):
@@ -10,11 +10,13 @@ class CA(object):
             Moore neighbourhood
     '''
     
-    def __init__(self, init, radius, rule, circular = False, Null = .0): 
+    def __init__(self, init, radius, rule, circular = False, Null = .0, global_update = False): 
         '''
             init: initial grid
             radius: sense radius
-            rule: update rule, arg is a list
+            rule: update rule
+                -local update: arg is a list
+                -global update: cur grid, arg as a 3d array
             circular: boundary rule
         '''
         self.grid = init
@@ -23,10 +25,14 @@ class CA(object):
         self.rule = rule
         self.circular = circular
         self.Null = Null
+        self.global_update = global_update
 
-    def update(self):
-        newgrid = ones_like(self.grid) * self.Null
-
+    def update(self): 
+        if self.global_update:
+            arg_grid = zeros((self.grid.shape+((2 * self.radius+1) ** 2,)))
+        else:
+            newgrid = ones_like(self.grid) * self.Null
+        
         for x in range(self.w):
             for y in range(self.h):
                 args = []
@@ -41,9 +47,15 @@ class CA(object):
                                               (y+ky >= self.h and (y+ky - self.h)) or (y+ky < self.h and y+ky)])
                             else:
                                 args.append(self.Null)
-                newgrid[x][y] = self.rule(array(args))
-        self.grid = newgrid
-        return newgrid
+                if self.global_update:
+                    arg_grid[x][y] = args
+                else:
+                    newgrid[x][y] = self.rule(array(args))
+        if self.global_update:
+            self.grid = self.rule(self.grid, arg_grid)
+        else:
+            self.grid = newgrid
+        return self.grid
 
     def get_grid(self):
         return self.grid
