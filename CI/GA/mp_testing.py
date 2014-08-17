@@ -1,33 +1,55 @@
-import threading
+import multiprocessing as mp 
 import time
 
-exitFlag = 0
+def execute(qin, qout):
+    inlock.acquire()
+    while qin.empty():
+        inlock.wait()
+    t = qin.get()
+    inlock.release()
 
-class myThread (threading.Thread):
-    def __init__(self, threadID, name, counter):
-        threading.Thread.__init__(self)
-        self.threadID = threadID
-        self.name = name
-        self.counter = counter
-    def run(self):
-        print "Starting " + self.name
-        print_time(self.name, self.counter, 5)
-        print "Exiting " + self.name
+    t = t+1
 
-def print_time(threadName, delay, counter):
-    while counter:
-        if exitFlag:
-            thread.exit()
-        time.sleep(delay)
-        print "%s: %s" % (threadName, time.ctime(time.time()))
-        counter -= 1
+    outlock.acquire()
+    while qout.full():
+        outlock.wait()
+    qout.put(t)
+    outlock.release()
 
-# Create new threads
-thread1 = myThread(1, "Thread-1", 1)
-thread2 = myThread(2, "Thread-2", 2)
+def put_mission(qin, q):
+    l = len(q)
+    ind = 0
+    while ind < l:
+        inlock.acquire()
+        while qin.full():
+            qin.wait()
+        while ind < l and not qin.full():
+            qin.put(q[ind])
+            ind += 1
+        inlock.notify_all()
+        inlock.release()
 
-# Start new Threads
-thread1.start()
-thread2.start()
+def get_result(qout):
+    count = 0
+    while count < 1000:
+        outlock.acquire()
+        while qout.empty():
+            outlock.wait()
+        while not qout.empty():
+            print qout.get()
+        outlock.notify_all()
+        outlock.release()
 
-print "Exiting Main Thread"
+inlock = mp.Condition()
+outlock = mp.Condition()
+qin = mp.Queue()
+qout = mp.Queue()
+
+tasks = [mp.Process(target = execute, args=(qin, qout)) for i in range(2)]
+tasks = tasks + [mp.Process(target = put_mission, args=(qin, range(1000))),
+                 mp.Process(target = get_result, args=(qout,))]
+for task in tasks:
+    task.start()
+for task in tasks:
+    task.join()
+

@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 from time import sleep
 from numpy import *
 import ga3
+import ga4
 
 DataSize = 0
 data = 0 
@@ -195,14 +196,14 @@ if __name__ == '__main__':
     plt.plot(1,1)
     raw_input('sizing')
     
-    '''    MyGA = ga.GA(tsp_fitness_f, {'fitness_thresold':0}, 300, tsp_gen_init,
+    '''    MyGA = ga.GA(tsp_itness_f, {'fitness_thresold':0}, 300, tsp_gen_init,
         0.9, tsp_crossover_HGA, 0.3, tsp_mutation_f, True, tsp_plot_f, 10, lambda a,b: a<b)
-    MyGA.fit()'''
+   MyGA.fit()'''
 
 
 #    def __init__(self, fitness_f, terminator, generation_size, genertaion_init, 
 #        crossover_vs_survival, crossover_f, mutation_rate, mutation_f, plot = False, plot_f = None):
-    MyGA = ga3.GA(tsp_fitness_f, {'fitness_thresold':0}, 500, tsp_gen_init,
+    MyGA = ga3.GA(tsp_fitness_f, {'fitness_thresold':0}, 20000, tsp_gen_init,
                         0.95, tsp_crossover_HGA, 0.05, tsp_mutation_f, True, tsp_plot_f, 10, lambda a,b: a<b,
           multiprocess = True)
     MyGA.fit()
