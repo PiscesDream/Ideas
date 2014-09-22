@@ -26,7 +26,7 @@ def tsp_fitness_f(route):
 
     length = .0
     for index, point in enumerate(route):
-        if index == len(route)-1:
+       if index == len(route)-1:
             length += p2p(data[point], data[route[0]])
         else:
             length += p2p(data[point], data[route[index+1]])
