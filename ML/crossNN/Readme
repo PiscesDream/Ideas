@@ -1,0 +1,17 @@
+some net work like this
+
+W_1
+
+a -> d
+b -> e 
+c -> f
+
+W_2 
+
+a d
+^ ^
+| |
+b e
+^ ^
+| |
+c f 

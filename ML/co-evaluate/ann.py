@@ -1,4 +1,7 @@
 '''
+    update:
+        2014/09/03:
+            softmax in the last layer
     special:
         plot, plot_interval
 '''
@@ -94,11 +97,13 @@ class ANN(object):
         self.cost = cost
         self.errors = errors
         self.updates = updates
+        #self.pred = y_pred
         self.time = []
         self.hid_layers = hid_layers
-        self.params = params
 
-    def fit(self, datasets, batch_size = 500, n_epochs = 200, lr = 0.01, plot = None, plot_interval = None):
+
+    def fit(self, datasets, batch_size = 500, n_epochs = 200, lr = 0.01,
+            plot = None, plot_interval = None):
         ''' without validation'''
 
         index = T.lscalar()
@@ -106,8 +111,12 @@ class ANN(object):
         train_set_x, train_set_y = datasets[0]
         test_set_x, test_set_y = datasets[1]
 
-        n_train_batches = train_set_x.get_value(borrow=True).shape[0]
-        n_test_batches = test_set_x.get_value(borrow=True).shape[0]
+        try:
+            n_train_batches = train_set_x.get_value(borrow=True).shape[0]
+            n_test_batches = test_set_x.get_value(borrow=True).shape[0]
+        except:
+            n_train_batches = train_set_x.shape[0]
+            n_test_batches = test_set_x.shape[0]
         n_train_batches /= batch_size
         n_test_batches /= batch_size
 
@@ -129,8 +138,7 @@ class ANN(object):
                 self.y: test_set_y[index * batch_size : (index+1) * batch_size]})
 
 #        print numpy.mean([debug_f(i) for i in xrange(n_test_batches)]) 
-        #if plot: plot(self)
-        #raw_input(test_model())
+        print(test_model())
 
         print '...training'
         maxiter = n_epochs
@@ -142,18 +150,19 @@ class ANN(object):
             for minibatch_index in xrange(n_train_batches):
                 print '\tL of (%03d/%03d) = %f\r' % (minibatch_index, n_train_batches, train_model(minibatch_index)),
             print ''
-            print 'error = %f' % test_model()
+            print 'error = %f (size=%d)' % (test_model(), test_set_y.shape[0].eval())
+            self.time.append(time.time()-start_time)
+
             if plot:
                 if iteration % plot_interval == 0:
-                    plot(self)
-            self.time.append(time.time()-start_time)
+                    plot(self, iteration)
 
     def __repr__(self):
         return '<CNN: %r; HID: %r>' % (self.nkerns, self.nhiddens)
 
-    def pred(self, x = None):
+    def pred(self, x):
         return theano.function([], T.argmax(self.hid_layers[-1].output, 1), 
-                    givens = {self.x: x})()
+                        givens = {self.x: x})()
 
     def prob(self, x):
         return theano.function([], self.hid_layers[-1].output,
@@ -165,7 +174,6 @@ class ANN(object):
     def get_neg_log(self, x, y):
         return theano.function([], -T.log(self.hid_layers[-1].output)[T.arange(self.y.shape[0]), self.y],
                                 givens={self.x:x, self.y:y})()
-
 
 
 def load_data(dataset, num = None):
@@ -183,7 +191,7 @@ def load_data(dataset, num = None):
             data_y = data_y[:num]
 #        data_y = boarden(10, data_y)
 
-#        size = int(data_x.shape[1]**.5)
+        size = int(data_x.shape[1]**.5)
 #        data_x = data_x.reshape(data_x.shape[0], -1) 
         print data_x.shape, data_y.shape
 

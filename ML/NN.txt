@@ -1,0 +1,6 @@
+Imitation:
+a neural network learn to improve itself
+
+
+Structure:
+image -> knowledge -> memory -> output

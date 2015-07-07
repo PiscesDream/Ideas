@@ -1,0 +1,11 @@
+given a cnn web
+    given the feature abstract
+    let people do the similarity judgment
+
+given a NN 
+    lefteye image is input/output
+    righteye image is output/input
+    analyze the inner connection weight
+    
+    used to detect the spin direction of the dancer girl
+

@@ -116,14 +116,14 @@ if __name__ == '__main__':
 
         cl = ann.ANN(2, 4, hiddens=[4], lmbd = 0.)
 
-        haha = 1000
+        haha = 2000
         cl.fit((train_set, train_set), lr = 0.01, batch_size = 100, n_epochs = haha,
-                plot = plot_in_f2, plot_interval = haha-1)
+                plot = plot_in_f2, plot_interval = haha)
 
         fitness = cl.get_neg_log(data, y)
         
         #update the memory
-        memory = fitness + memory
+        memory = fitness #+ memory * 0.71
         
         p = memory/memory.sum()
 

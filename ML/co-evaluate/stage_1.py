@@ -94,30 +94,111 @@ if __name__ == '__main__':
     y = numpy.asarray(y, dtype = 'int32')
     total = len(y)
     size = int(total * 0.05)
+    #test_set
+    sep = int(total * 0.7)
+    train_set = (data[:sep], y[:sep])
+    test_set = (theano.shared(data[sep:]), theano.shared(y[sep:]))
 #    data, y = theano.shared(data, borrow = True), T.cast(theano.shared(y, borrow = True), 'int32')
+    single_step = 2000
 
     #random sample training sample
-    ind = choice(total, size)
+    ind = choice(sep, size)
 
-    cl = ann.ANN(2, 4, hiddens=[4], lmbd = 0.)
 
-    max_iteration = 10
-    iteration = 0
-    while iteration < max_iteration: 
-        train_set = (theano.shared(data[ind]), theano.shared(y[ind]))
+    def plot_in_f2(self, iteration_save=None):
+        plt.clf()
+        pred = self.pred(train_batch[0]) 
+        plot(train_batch[0].get_value(), pred)
+        if iteration_save:
+            plt.savefig('./pics/iter_'+str(iteration_save)+'.jpg')
+        plt.draw()
 
-        def plot_in_f2(self):
-            plt.clf()
-            pred = self.pred(train_set[0]) 
-            plot(train_set[0].get_value(), pred)
-            plt.draw()
+    single_train = 0
+    if single_train:
+        train_batch = (theano.shared(train_set[0]), theano.shared(train_set[1]))
+        large = 1000
+        cl = ann.ANN(2, 4, hiddens=[4], lmbd = 0.)
+        cl.fit((train_batch, test_set), lr = 0.01, batch_size = 100, n_epochs = large,
+                plot = plot_in_f2, plot_interval = 200)
 
-        cl.fit((train_set, train_set), lr = 0.01, batch_size = 100, n_epochs = 2000, plot = plot_in_f2, plot_interval = 1999)
+    mode = 'inf-memory'
+    
+    if mode == 'normal':
+        max_iteration = 20
+        iteration = 0
+        while iteration < max_iteration: 
+            train_batch = (theano.shared(train_set[0][ind]), theano.shared(train_set[1][ind]))
 
-        fitness = cl.get_neg_log(data, y)
-        p = fitness/fitness.sum()
+            cl = ann.ANN(2, 4, hiddens=[4], lmbd = 0.)
+            cl.fit((train_batch, test_set), lr = 0.01, batch_size = 100, n_epochs = single_step, 
+                    plot = plot_in_f2, plot_interval = single_step)
 
-        #resample
-        ind = choice(total, size, p = p)
+            fitness = cl.get_neg_log(*train_set)
+            p = fitness/fitness.sum()
+
+            #resample
+            ind = choice(sep, size, p = p)
+
+    if mode == 'memory':
+        #3 generation-long memory
+        memory = [[0] * sep] * 2
+        max_iteration = numpy.inf
+        iteration = 0
+        while iteration < max_iteration: 
+            iteration += 1
+            train_batch = (theano.shared(train_set[0][ind]), theano.shared(train_set[1][ind]))
+
+            cl = ann.ANN(2, 4, hiddens=[4], lmbd = 0.)
+            cl.fit((train_batch, test_set), lr = 0.01, batch_size = 100, 
+                    n_epochs = single_step+iteration,
+                    plot = plot_in_f2,
+                    plot_interval = single_step+iteration)
+
+            fitness = cl.get_neg_log(*train_set)
+
+            #update the memory
+            memory.pop(0)
+            memory.append(fitness)
+            #print numpy.sum(memory, 0)
+            #raw_input( numpy.array(memory) )
+            
+            #non-weighted memory
+            #p = numpy.sum(memory, 0)
+            #p = p/p.sum()
+
+            #weighted memory
+            p = numpy.array(memory)
+            p = p[1] + p[0] 
+            p = p/p.sum()
+
+            #resample
+            ind = choice(sep, size, p = p)
+
+
+    if mode == 'inf-memory':
+        memory = numpy.zeros((sep, )) 
+        max_iteration = numpy.inf
+        iteration = 0
+        while iteration < max_iteration: 
+            iteration += 1
+            train_batch = (theano.shared(train_set[0][ind]), theano.shared(train_set[1][ind]))
+
+            cl = ann.ANN(2, 4, hiddens=[4], lmbd = 0.)
+            cl.fit((train_batch, test_set), lr = 0.01, batch_size = 100, 
+                    n_epochs = single_step+iteration,
+                    plot = plot_in_f2,
+                    plot_interval = single_step+iteration)
+
+            fitness = cl.get_neg_log(*train_set)
+
+            # normalize & memorize
+            memory = memory + fitness/fitness.sum()
+            memory = memory/memory.sum()
+
+            #resample
+            p = memory
+            ind = choice(sep, size, p = p)
+
+
 
 

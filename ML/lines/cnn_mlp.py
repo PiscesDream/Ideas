@@ -321,21 +321,22 @@ if __name__ == '__main__':
     datasets = load_data('line234.dat')
     cl = raw_load('lines.dat')
 
-    kernel_test = False 
+    kernel_test = True 
     if kernel_test: 
+        print cl
+
         for i in range(100):
             arr = datasets[0][0][i].eval().reshape(32, 32)
-            ans = theano.function([], cl.cnn_layers[0].output,
-                         givens={cl.x:arr.reshape(1, 1, 32, 32)})()[0]
+            ans = list(theano.function([], cl.cnn_layers[0].output,
+                         givens={cl.x:arr.reshape(1, 1, 32, 32)})()[0])
+            ans.extend( list(theano.function([], cl.cnn_layers[1].output,
+                         givens={cl.x:arr.reshape(1, 1, 32, 32)})()[0]))
 
             import matplotlib.pyplot as plt
             for i in range(2):
-                for j in xrange(3):
-                    axs = plt.subplot(2, 3, i*3 + j)
-                    if i*3 + j != 0: 
-                        axs.imshow(ans[i*3 + j-1], cmap = 'gray')
-                    else:
-                        axs.imshow(arr, cmap = 'gray')
+                for j in xrange(5):
+                    axs = plt.subplot(2, 5, i*5 + j)
+                    axs.imshow(ans[i*5 + j], cmap = 'gray', interpolation='None')
 
             plt.show()
 
@@ -391,7 +392,7 @@ if __name__ == '__main__':
         cPickle.dump(k, open('mnist_cnn_classifier.dat', 'wb'))
         raw_dump(k, 'mnist_cnn_raw.dat')
 
-    simple_cnn = True 
+    simple_cnn = False 
     if simple_cnn:
         k = cnn(dim_in = 1, size_in = (32, 32), size_out = 3, 
                nkerns = [(5, (3, 3), (2, 2)),(5, (3, 3), (2, 2))], 

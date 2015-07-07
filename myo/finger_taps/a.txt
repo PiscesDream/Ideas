@@ -1,0 +1,2211 @@
+===============================
+===============================
+In file included from D:\Anaconda\include/Python.h:58:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/pyport.h:886:2: error: #error "LONG_BIT definition appears wrong for platform (bad gcc/glibc config?)."
+ #error "LONG_BIT definition appears wrong for platform (bad gcc/glibc config?)."
+  ^
+In file included from D:\Anaconda\include/Python.h:58:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/pyport.h:171:33: error: expected initializer before 'Py_uintptr_t'
+ typedef unsigned PY_LONG_LONG   Py_uintptr_t;
+                                 ^
+In file included from D:\Anaconda\include/Python.h:8:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/pyconfig.h:306:23: error: '__int64' does not name a type
+ # define PY_LONG_LONG __int64
+                       ^
+D:\Anaconda\include/pyport.h:172:9: note: in expansion of macro 'PY_LONG_LONG'
+ typedef PY_LONG_LONG            Py_intptr_t;
+         ^
+In file included from D:\Anaconda\include/Python.h:58:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/pyport.h:185:9: error: 'Py_intptr_t' does not name a type
+ typedef Py_intptr_t     Py_ssize_t;
+         ^
+In file included from D:\Anaconda\include/Python.h:80:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/object.h:80:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_refcnt;               \
+     ^
+D:\Anaconda\include/object.h:107:5: note: in expansion of macro 'PyObject_HEAD'
+     PyObject_HEAD
+     ^
+D:\Anaconda\include/object.h:80:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_refcnt;               \
+     ^
+D:\Anaconda\include/object.h:97:5: note: in expansion of macro 'PyObject_HEAD'
+     PyObject_HEAD                       \
+     ^
+D:\Anaconda\include/object.h:111:5: note: in expansion of macro 'PyObject_VAR_HEAD'
+     PyObject_VAR_HEAD
+     ^
+D:\Anaconda\include/object.h:98:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_size; /* Number of items in variable part */
+     ^
+D:\Anaconda\include/object.h:111:5: note: in expansion of macro 'PyObject_VAR_HEAD'
+     PyObject_VAR_HEAD
+     ^
+D:\Anaconda\include/object.h:137:20: error: typedef 'Py_ssize_t' is initialized (use decltype instead)
+ typedef Py_ssize_t (*lenfunc)(PyObject *);
+                    ^
+D:\Anaconda\include/object.h:137:22: error: 'lenfunc' was not declared in this scope
+ typedef Py_ssize_t (*lenfunc)(PyObject *);
+                      ^
+D:\Anaconda\include/object.h:141:47: error: 'Py_ssize_t' has not been declared
+ typedef PyObject *(*ssizeargfunc)(PyObject *, Py_ssize_t);
+                                               ^
+D:\Anaconda\include/object.h:142:52: error: 'Py_ssize_t' has not been declared
+ typedef PyObject *(*ssizessizeargfunc)(PyObject *, Py_ssize_t, Py_ssize_t);
+                                                    ^
+D:\Anaconda\include/object.h:142:64: error: 'Py_ssize_t' has not been declared
+ typedef PyObject *(*ssizessizeargfunc)(PyObject *, Py_ssize_t, Py_ssize_t);
+                                                                ^
+D:\Anaconda\include/object.h:145:43: error: 'Py_ssize_t' has not been declared
+ typedef int(*ssizeobjargproc)(PyObject *, Py_ssize_t, PyObject *);
+                                           ^
+D:\Anaconda\include/object.h:146:48: error: 'Py_ssize_t' has not been declared
+ typedef int(*ssizessizeobjargproc)(PyObject *, Py_ssize_t, Py_ssize_t, PyObject *);
+                                                ^
+D:\Anaconda\include/object.h:146:60: error: 'Py_ssize_t' has not been declared
+ typedef int(*ssizessizeobjargproc)(PyObject *, Py_ssize_t, Py_ssize_t, PyObject *);
+                                                            ^
+D:\Anaconda\include/object.h:157:20: error: typedef 'Py_ssize_t' is initialized (use decltype instead)
+ typedef Py_ssize_t (*readbufferproc)(PyObject *, Py_ssize_t, void **);
+                    ^
+D:\Anaconda\include/object.h:157:22: error: 'readbufferproc' was not declared in this scope
+ typedef Py_ssize_t (*readbufferproc)(PyObject *, Py_ssize_t, void **);
+                      ^
+D:\Anaconda\include/object.h:158:20: error: typedef 'Py_ssize_t' is initialized (use decltype instead)
+ typedef Py_ssize_t (*writebufferproc)(PyObject *, Py_ssize_t, void **);
+                    ^
+D:\Anaconda\include/object.h:158:22: error: 'writebufferproc' was not declared in this scope
+ typedef Py_ssize_t (*writebufferproc)(PyObject *, Py_ssize_t, void **);
+                      ^
+D:\Anaconda\include/object.h:159:20: error: typedef 'Py_ssize_t' is initialized (use decltype instead)
+ typedef Py_ssize_t (*segcountproc)(PyObject *, Py_ssize_t *);
+                    ^
+D:\Anaconda\include/object.h:159:22: error: 'segcountproc' was not declared in this scope
+ typedef Py_ssize_t (*segcountproc)(PyObject *, Py_ssize_t *);
+                      ^
+D:\Anaconda\include/object.h:160:20: error: typedef 'Py_ssize_t' is initialized (use decltype instead)
+ typedef Py_ssize_t (*charbufferproc)(PyObject *, Py_ssize_t, char **);
+                    ^
+D:\Anaconda\include/object.h:160:22: error: 'charbufferproc' was not declared in this scope
+ typedef Py_ssize_t (*charbufferproc)(PyObject *, Py_ssize_t, char **);
+                      ^
+D:\Anaconda\include/object.h:167:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t len;
+     ^
+D:\Anaconda\include/object.h:168:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t itemsize;  /* This is Py_ssize_t so it can be
+     ^
+D:\Anaconda\include/object.h:173:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t *shape;
+     ^
+D:\Anaconda\include/object.h:174:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t *strides;
+     ^
+D:\Anaconda\include/object.h:175:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t *suboffsets;
+     ^
+D:\Anaconda\include/object.h:176:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t smalltable[2];  /* static store for shape and strides of
+     ^
+D:\Anaconda\include/object.h:276:5: error: 'lenfunc' does not name a type
+     lenfunc sq_length;
+     ^
+D:\Anaconda\include/object.h:290:5: error: 'lenfunc' does not name a type
+     lenfunc mp_length;
+     ^
+D:\Anaconda\include/object.h:296:5: error: 'readbufferproc' does not name a type
+     readbufferproc bf_getreadbuffer;
+     ^
+D:\Anaconda\include/object.h:297:5: error: 'writebufferproc' does not name a type
+     writebufferproc bf_getwritebuffer;
+     ^
+D:\Anaconda\include/object.h:298:5: error: 'segcountproc' does not name a type
+     segcountproc bf_getsegcount;
+     ^
+D:\Anaconda\include/object.h:299:5: error: 'charbufferproc' does not name a type
+     charbufferproc bf_getcharbuffer;
+     ^
+D:\Anaconda\include/object.h:322:54: error: 'Py_ssize_t' has not been declared
+ typedef PyObject *(*allocfunc)(struct _typeobject *, Py_ssize_t);
+                                                      ^
+D:\Anaconda\include/object.h:80:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_refcnt;               \
+     ^
+D:\Anaconda\include/object.h:97:5: note: in expansion of macro 'PyObject_HEAD'
+     PyObject_HEAD                       \
+     ^
+D:\Anaconda\include/object.h:325:5: note: in expansion of macro 'PyObject_VAR_HEAD'
+     PyObject_VAR_HEAD
+     ^
+D:\Anaconda\include/object.h:98:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_size; /* Number of items in variable part */
+     ^
+D:\Anaconda\include/object.h:325:5: note: in expansion of macro 'PyObject_VAR_HEAD'
+     PyObject_VAR_HEAD
+     ^
+D:\Anaconda\include/object.h:327:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t tp_basicsize, tp_itemsize; /* For allocation */
+     ^
+D:\Anaconda\include/object.h:372:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t tp_weaklistoffset;
+     ^
+D:\Anaconda\include/object.h:387:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t tp_dictoffset;
+     ^
+D:\Anaconda\include/object.h:450:60: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(PyObject *) PyType_GenericAlloc(PyTypeObject *, Py_ssize_t);
+                                                            ^
+In file included from D:\Anaconda\include/Python.h:81:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/objimpl.h:152:66: error: 'Py_ssize_t' has not been declared
+                                                  PyTypeObject *, Py_ssize_t);
+                                                                  ^
+D:\Anaconda\include/objimpl.h:154:60: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(PyVarObject *) _PyObject_NewVar(PyTypeObject *, Py_ssize_t);
+                                                            ^
+In file included from D:\Anaconda\include/Python.h:58:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/objimpl.h:235:12: error: 'Py_ssize_t' does not name a type
+ PyAPI_FUNC(Py_ssize_t) PyGC_Collect(void);
+            ^
+D:\Anaconda\include/pyport.h:793:34: note: in definition of macro 'PyAPI_FUNC'
+ #       define PyAPI_FUNC(RTYPE) RTYPE
+                                  ^
+In file included from D:\Anaconda\include/Python.h:81:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/objimpl.h:244:62: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(PyVarObject *) _PyObject_GC_Resize(PyVarObject *, Py_ssize_t);
+                                                              ^
+D:\Anaconda\include/objimpl.h:256:9: error: 'Py_ssize_t' does not name a type
+         Py_ssize_t gc_refs;
+         ^
+D:\Anaconda\include/objimpl.h:308:63: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(PyVarObject *) _PyObject_GC_NewVar(PyTypeObject *, Py_ssize_t);
+                                                               ^
+In file included from D:\Anaconda\include/Python.h:80:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/object.h:80:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_refcnt;               \
+     ^
+D:\Anaconda\include/unicodeobject.h:416:5: note: in expansion of macro 'PyObject_HEAD'
+     PyObject_HEAD
+     ^
+In file included from D:\Anaconda\include/Python.h:85:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/unicodeobject.h:417:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t length;          /* Length of raw Unicode data in buffer */
+     ^
+D:\Anaconda\include/unicodeobject.h:466:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t size             /* size of buffer */
+     ^
+D:\Anaconda\include/unicodeobject.h:472:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t size       /* size of buffer */
+     ^
+In file included from D:\Anaconda\include/Python.h:58:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/unicodeobject.h:490:12: error: 'Py_ssize_t' does not name a type
+ PyAPI_FUNC(Py_ssize_t) PyUnicode_GetSize(
+            ^
+D:\Anaconda\include/pyport.h:793:34: note: in definition of macro 'PyAPI_FUNC'
+ #       define PyAPI_FUNC(RTYPE) RTYPE
+                                  ^
+In file included from D:\Anaconda\include/Python.h:85:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/unicodeobject.h:513:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t length           /* New length */
+     ^
+D:\Anaconda\include/unicodeobject.h:563:50: error: 'Py_ssize_t' has not been declared
+                                                  Py_ssize_t format_spec_len);
+                                                  ^
+D:\Anaconda\include/unicodeobject.h:576:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t size             /* size of buffer */
+     ^
+In file included from D:\Anaconda\include/Python.h:58:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/unicodeobject.h:591:12: error: 'Py_ssize_t' does not name a type
+ PyAPI_FUNC(Py_ssize_t) PyUnicode_AsWideChar(
+            ^
+D:\Anaconda\include/pyport.h:793:34: note: in definition of macro 'PyAPI_FUNC'
+ #       define PyAPI_FUNC(RTYPE) RTYPE
+                                  ^
+In file included from D:\Anaconda\include/Python.h:85:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/unicodeobject.h:687:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t size,            /* size of buffer */
+     ^
+D:\Anaconda\include/unicodeobject.h:697:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t size,            /* number of Py_UNICODE chars to encode */
+     ^
+D:\Anaconda\include/unicodeobject.h:729:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t length,          /* size of string */
+     ^
+D:\Anaconda\include/unicodeobject.h:735:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t length,          /* size of string */
+     ^
+D:\Anaconda\include/unicodeobject.h:737:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t *consumed        /* bytes consumed */
+     ^
+D:\Anaconda\include/unicodeobject.h:742:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t length,                  /* number of Py_UNICODE chars to encode */
+     ^
+D:\Anaconda\include/unicodeobject.h:752:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t length,          /* size of string */
+     ^
+D:\Anaconda\include/unicodeobject.h:758:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t length,          /* size of string */
+     ^
+D:\Anaconda\include/unicodeobject.h:760:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t *consumed                /* bytes consumed */
+     ^
+D:\Anaconda\include/unicodeobject.h:769:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t length,                  /* number of Py_UNICODE chars to encode */
+     ^
+D:\Anaconda\include/unicodeobject.h:800:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t length,          /* size of string */
+     ^
+D:\Anaconda\include/unicodeobject.h:809:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t length,          /* size of string */
+     ^
+D:\Anaconda\include/unicodeobject.h:814:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t *consumed        /* bytes consumed */
+     ^
+D:\Anaconda\include/unicodeobject.h:842:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t length,          /* number of Py_UNICODE chars to encode */
+     ^
+D:\Anaconda\include/unicodeobject.h:874:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t length,          /* size of string */
+     ^
+D:\Anaconda\include/unicodeobject.h:883:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t length,          /* size of string */
+     ^
+D:\Anaconda\include/unicodeobject.h:888:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t *consumed                /* bytes consumed */
+     ^
+D:\Anaconda\include/unicodeobject.h:920:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t length,                  /* number of Py_UNICODE chars to encode */
+     ^
+D:\Anaconda\include/unicodeobject.h:929:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t length,          /* size of string */
+     ^
+D:\Anaconda\include/unicodeobject.h:939:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t length                   /* Number of Py_UNICODE chars to encode */
+     ^
+D:\Anaconda\include/unicodeobject.h:946:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t length,          /* size of string */
+     ^
+D:\Anaconda\include/unicodeobject.h:956:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t length                   /* Number of Py_UNICODE chars to encode */
+     ^
+D:\Anaconda\include/unicodeobject.h:965:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t length,
+     ^
+D:\Anaconda\include/unicodeobject.h:977:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t length,          /* size of string */
+     ^
+D:\Anaconda\include/unicodeobject.h:987:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t length,                  /* Number of Py_UNICODE chars to encode */
+     ^
+D:\Anaconda\include/unicodeobject.h:999:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t length,          /* size of string */
+     ^
+D:\Anaconda\include/unicodeobject.h:1009:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t length,                  /* Number of Py_UNICODE chars to encode */
+     ^
+D:\Anaconda\include/unicodeobject.h:1037:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t length,          /* size of string */
+     ^
+D:\Anaconda\include/unicodeobject.h:1051:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t length,          /* Number of Py_UNICODE chars to encode */
+     ^
+D:\Anaconda\include/unicodeobject.h:1072:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t length,                  /* Number of Py_UNICODE chars to encode */
+     ^
+D:\Anaconda\include/unicodeobject.h:1083:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t length,              /* size of string */
+     ^
+D:\Anaconda\include/unicodeobject.h:1089:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t length,          /* size of string */
+     ^
+D:\Anaconda\include/unicodeobject.h:1091:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t *consumed        /* bytes consumed */
+     ^
+D:\Anaconda\include/unicodeobject.h:1100:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t length,              /* Number of Py_UNICODE chars to encode */
+     ^
+D:\Anaconda\include/unicodeobject.h:1132:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t length,                  /* Number of Py_UNICODE chars to encode */
+     ^
+D:\Anaconda\include/unicodeobject.h:1164:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t maxsplit         /* Maxsplit count */
+     ^
+D:\Anaconda\include/unicodeobject.h:1208:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t maxsplit         /* Maxsplit count */
+     ^
+In file included from D:\Anaconda\include/Python.h:58:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/unicodeobject.h:1240:12: error: 'Py_ssize_t' does not name a type
+ PyAPI_FUNC(Py_ssize_t) PyUnicode_Tailmatch(
+            ^
+D:\Anaconda\include/pyport.h:793:34: note: in definition of macro 'PyAPI_FUNC'
+ #       define PyAPI_FUNC(RTYPE) RTYPE
+                                  ^
+D:\Anaconda\include/unicodeobject.h:1252:12: error: 'Py_ssize_t' does not name a type
+ PyAPI_FUNC(Py_ssize_t) PyUnicode_Find(
+            ^
+D:\Anaconda\include/pyport.h:793:34: note: in definition of macro 'PyAPI_FUNC'
+ #       define PyAPI_FUNC(RTYPE) RTYPE
+                                  ^
+D:\Anaconda\include/unicodeobject.h:1262:12: error: 'Py_ssize_t' does not name a type
+ PyAPI_FUNC(Py_ssize_t) PyUnicode_Count(
+            ^
+D:\Anaconda\include/pyport.h:793:34: note: in definition of macro 'PyAPI_FUNC'
+ #       define PyAPI_FUNC(RTYPE) RTYPE
+                                  ^
+In file included from D:\Anaconda\include/Python.h:85:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/unicodeobject.h:1276:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t maxcount         /* Max. number of replacements to apply;
+     ^
+In file included from D:\Anaconda\include/Python.h:80:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/object.h:80:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_refcnt;               \
+     ^
+D:\Anaconda\include/intobject.h:24:5: note: in expansion of macro 'PyObject_HEAD'
+     PyObject_HEAD
+     ^
+In file included from D:\Anaconda\include/Python.h:86:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/intobject.h:36:55: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(PyObject *) PyInt_FromUnicode(Py_UNICODE*, Py_ssize_t, int);
+                                                       ^
+D:\Anaconda\include/intobject.h:40:42: error: 'Py_ssize_t' was not declared in this scope
+ PyAPI_FUNC(PyObject *) PyInt_FromSsize_t(Py_ssize_t);
+                                          ^
+In file included from D:\Anaconda\include/Python.h:58:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/intobject.h:42:12: error: 'Py_ssize_t' does not name a type
+ PyAPI_FUNC(Py_ssize_t) PyInt_AsSsize_t(PyObject *);
+            ^
+D:\Anaconda\include/pyport.h:793:34: note: in definition of macro 'PyAPI_FUNC'
+ #       define PyAPI_FUNC(RTYPE) RTYPE
+                                  ^
+In file included from D:\Anaconda\include/Python.h:86:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/intobject.h:46:35: error: expected initializer before 'PyInt_AsUnsignedLongLongMask'
+ PyAPI_FUNC(unsigned PY_LONG_LONG) PyInt_AsUnsignedLongLongMask(PyObject *);
+                                   ^
+D:\Anaconda\include/intobject.h:76:11: error: 'Py_ssize_t' has not been declared
+           Py_ssize_t format_spec_len);
+           ^
+In file included from D:\Anaconda\include/Python.h:88:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/longobject.h:22:43: error: 'Py_ssize_t' was not declared in this scope
+ PyAPI_FUNC(PyObject *) PyLong_FromSsize_t(Py_ssize_t);
+                                           ^
+In file included from D:\Anaconda\include/Python.h:58:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/longobject.h:27:12: error: 'Py_ssize_t' does not name a type
+ PyAPI_FUNC(Py_ssize_t) PyLong_AsSsize_t(PyObject *);
+            ^
+D:\Anaconda\include/pyport.h:793:34: note: in definition of macro 'PyAPI_FUNC'
+ #       define PyAPI_FUNC(RTYPE) RTYPE
+                                  ^
+In file included from D:\Anaconda\include/Python.h:88:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/longobject.h:43:51: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(double) _PyLong_Frexp(PyLongObject *a, Py_ssize_t *e);
+                                                   ^
+In file included from D:\Anaconda\include/Python.h:8:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/pyconfig.h:306:23: error: '__int64' was not declared in this scope
+ # define PY_LONG_LONG __int64
+                       ^
+D:\Anaconda\include/longobject.h:50:44: note: in expansion of macro 'PY_LONG_LONG'
+ PyAPI_FUNC(PyObject *) PyLong_FromLongLong(PY_LONG_LONG);
+                                            ^
+In file included from D:\Anaconda\include/Python.h:58:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/pyconfig.h:306:23: error: '__int64' does not name a type
+ # define PY_LONG_LONG __int64
+                       ^
+D:\Anaconda\include/pyport.h:793:34: note: in definition of macro 'PyAPI_FUNC'
+ #       define PyAPI_FUNC(RTYPE) RTYPE
+                                  ^
+D:\Anaconda\include/longobject.h:52:12: note: in expansion of macro 'PY_LONG_LONG'
+ PyAPI_FUNC(PY_LONG_LONG) PyLong_AsLongLong(PyObject *);
+            ^
+In file included from D:\Anaconda\include/Python.h:88:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/longobject.h:53:35: error: expected initializer before 'PyLong_AsUnsignedLongLong'
+ PyAPI_FUNC(unsigned PY_LONG_LONG) PyLong_AsUnsignedLongLong(PyObject *);
+                                   ^
+D:\Anaconda\include/longobject.h:54:35: error: expected initializer before 'PyLong_AsUnsignedLongLongMask'
+ PyAPI_FUNC(unsigned PY_LONG_LONG) PyLong_AsUnsignedLongLongMask(PyObject *);
+                                   ^
+In file included from D:\Anaconda\include/Python.h:58:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/pyconfig.h:306:23: error: '__int64' does not name a type
+ # define PY_LONG_LONG __int64
+                       ^
+D:\Anaconda\include/pyport.h:793:34: note: in definition of macro 'PyAPI_FUNC'
+ #       define PyAPI_FUNC(RTYPE) RTYPE
+                                  ^
+D:\Anaconda\include/longobject.h:55:12: note: in expansion of macro 'PY_LONG_LONG'
+ PyAPI_FUNC(PY_LONG_LONG) PyLong_AsLongLongAndOverflow(PyObject *, int *);
+            ^
+In file included from D:\Anaconda\include/Python.h:88:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/longobject.h:60:56: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(PyObject *) PyLong_FromUnicode(Py_UNICODE*, Py_ssize_t, int);
+                                                        ^
+D:\Anaconda\include/longobject.h:130:12: error: 'Py_ssize_t' has not been declared
+            Py_ssize_t format_spec_len);
+            ^
+In file included from D:\Anaconda\include/Python.h:80:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/object.h:80:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_refcnt;               \
+     ^
+D:\Anaconda\include/floatobject.h:15:5: note: in expansion of macro 'PyObject_HEAD'
+     PyObject_HEAD
+     ^
+In file included from D:\Anaconda\include/Python.h:89:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/floatobject.h:128:13: error: 'Py_ssize_t' has not been declared
+             Py_ssize_t format_spec_len);
+             ^
+In file included from D:\Anaconda\include/Python.h:80:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/object.h:80:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_refcnt;               \
+     ^
+D:\Anaconda\include/complexobject.h:41:5: note: in expansion of macro 'PyObject_HEAD'
+     PyObject_HEAD
+     ^
+In file included from D:\Anaconda\include/Python.h:91:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/complexobject.h:61:50: error: 'Py_ssize_t' has not been declared
+                                                  Py_ssize_t format_spec_len);
+                                                  ^
+In file included from D:\Anaconda\include/Python.h:80:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/object.h:80:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_refcnt;               \
+     ^
+D:\Anaconda\include/object.h:97:5: note: in expansion of macro 'PyObject_HEAD'
+     PyObject_HEAD                       \
+     ^
+D:\Anaconda\include/stringobject.h:36:5: note: in expansion of macro 'PyObject_VAR_HEAD'
+     PyObject_VAR_HEAD
+     ^
+D:\Anaconda\include/object.h:98:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_size; /* Number of items in variable part */
+     ^
+D:\Anaconda\include/stringobject.h:36:5: note: in expansion of macro 'PyObject_VAR_HEAD'
+     PyObject_VAR_HEAD
+     ^
+In file included from D:\Anaconda\include/Python.h:94:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/stringobject.h:62:65: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(PyObject *) PyString_FromStringAndSize(const char *, Py_ssize_t);
+                                                                 ^
+In file included from D:\Anaconda\include/Python.h:58:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/stringobject.h:68:12: error: 'Py_ssize_t' does not name a type
+ PyAPI_FUNC(Py_ssize_t) PyString_Size(PyObject *);
+            ^
+D:\Anaconda\include/pyport.h:793:34: note: in definition of macro 'PyAPI_FUNC'
+ #       define PyAPI_FUNC(RTYPE) RTYPE
+                                  ^
+In file included from D:\Anaconda\include/Python.h:94:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/stringobject.h:73:47: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(int) _PyString_Resize(PyObject **, Py_ssize_t);
+                                               ^
+D:\Anaconda\include/stringobject.h:78:60: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(PyObject *) PyString_DecodeEscape(const char *, Py_ssize_t, 
+                                                            ^
+D:\Anaconda\include/stringobject.h:79:24: error: 'Py_ssize_t' has not been declared
+          const char *, Py_ssize_t,
+                        ^
+D:\Anaconda\include/stringobject.h:105:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t size,            /* size of buffer */
+     ^
+D:\Anaconda\include/stringobject.h:115:5: error: 'Py_ssize_t' has not been declared
+     Py_ssize_t size,            /* number of chars to encode */
+     ^
+D:\Anaconda\include/stringobject.h:175:14: error: 'Py_ssize_t' does not name a type
+     register Py_ssize_t *len /* pointer to length variable or NULL
+              ^
+In file included from D:\Anaconda\include/Python.h:58:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/stringobject.h:184:12: error: 'Py_ssize_t' does not name a type
+ PyAPI_FUNC(Py_ssize_t) _PyString_InsertThousandsGroupingLocale(char *buffer,
+            ^
+D:\Anaconda\include/pyport.h:793:34: note: in definition of macro 'PyAPI_FUNC'
+ #       define PyAPI_FUNC(RTYPE) RTYPE
+                                  ^
+D:\Anaconda\include/stringobject.h:193:12: error: 'Py_ssize_t' does not name a type
+ PyAPI_FUNC(Py_ssize_t) _PyString_InsertThousandsGrouping(char *buffer,
+            ^
+D:\Anaconda\include/pyport.h:793:34: note: in definition of macro 'PyAPI_FUNC'
+ #       define PyAPI_FUNC(RTYPE) RTYPE
+                                  ^
+In file included from D:\Anaconda\include/Python.h:94:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/stringobject.h:205:13: error: 'Py_ssize_t' has not been declared
+             Py_ssize_t format_spec_len);
+             ^
+In file included from D:\Anaconda\include/Python.h:80:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/object.h:80:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_refcnt;               \
+     ^
+D:\Anaconda\include/memoryobject.h:65:5: note: in expansion of macro 'PyObject_HEAD'
+     PyObject_HEAD
+     ^
+In file included from D:\Anaconda\include/Python.h:96:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/bufferobject.h:20:44: error: 'Py_ssize_t' has not been declared
+                                            Py_ssize_t offset, Py_ssize_t size);
+                                            ^
+D:\Anaconda\include/bufferobject.h:20:63: error: 'Py_ssize_t' has not been declared
+                                            Py_ssize_t offset, Py_ssize_t size);
+                                                               ^
+D:\Anaconda\include/bufferobject.h:22:53: error: 'Py_ssize_t' has not been declared
+                                                     Py_ssize_t offset,
+                                                     ^
+D:\Anaconda\include/bufferobject.h:23:53: error: 'Py_ssize_t' has not been declared
+                                                     Py_ssize_t size);
+                                                     ^
+D:\Anaconda\include/bufferobject.h:25:55: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(PyObject *) PyBuffer_FromMemory(void *ptr, Py_ssize_t size);
+                                                       ^
+D:\Anaconda\include/bufferobject.h:26:64: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(PyObject *) PyBuffer_FromReadWriteMemory(void *ptr, Py_ssize_t size);
+                                                                ^
+D:\Anaconda\include/bufferobject.h:28:37: error: 'Py_ssize_t' was not declared in this scope
+ PyAPI_FUNC(PyObject *) PyBuffer_New(Py_ssize_t size);
+                                     ^
+In file included from D:\Anaconda\include/Python.h:80:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/object.h:80:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_refcnt;               \
+     ^
+D:\Anaconda\include/object.h:97:5: note: in expansion of macro 'PyObject_HEAD'
+     PyObject_HEAD                       \
+     ^
+D:\Anaconda\include/bytearrayobject.h:23:5: note: in expansion of macro 'PyObject_VAR_HEAD'
+     PyObject_VAR_HEAD
+     ^
+D:\Anaconda\include/object.h:98:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_size; /* Number of items in variable part */
+     ^
+D:\Anaconda\include/bytearrayobject.h:23:5: note: in expansion of macro 'PyObject_VAR_HEAD'
+     PyObject_VAR_HEAD
+     ^
+In file included from D:\Anaconda\include/Python.h:98:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/bytearrayobject.h:26:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_alloc; /* How many bytes allocated */
+     ^
+D:\Anaconda\include/bytearrayobject.h:41:68: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(PyObject *) PyByteArray_FromStringAndSize(const char *, Py_ssize_t);
+                                                                    ^
+In file included from D:\Anaconda\include/Python.h:58:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/bytearrayobject.h:42:12: error: 'Py_ssize_t' does not name a type
+ PyAPI_FUNC(Py_ssize_t) PyByteArray_Size(PyObject *);
+            ^
+D:\Anaconda\include/pyport.h:793:34: note: in definition of macro 'PyAPI_FUNC'
+ #       define PyAPI_FUNC(RTYPE) RTYPE
+                                  ^
+In file included from D:\Anaconda\include/Python.h:98:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/bytearrayobject.h:44:48: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(int) PyByteArray_Resize(PyObject *, Py_ssize_t);
+                                                ^
+In file included from D:\Anaconda\include/Python.h:80:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/object.h:80:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_refcnt;               \
+     ^
+D:\Anaconda\include/object.h:97:5: note: in expansion of macro 'PyObject_HEAD'
+     PyObject_HEAD                       \
+     ^
+D:\Anaconda\include/tupleobject.h:25:5: note: in expansion of macro 'PyObject_VAR_HEAD'
+     PyObject_VAR_HEAD
+     ^
+D:\Anaconda\include/object.h:98:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_size; /* Number of items in variable part */
+     ^
+D:\Anaconda\include/tupleobject.h:25:5: note: in expansion of macro 'PyObject_VAR_HEAD'
+     PyObject_VAR_HEAD
+     ^
+In file included from D:\Anaconda\include/Python.h:99:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/tupleobject.h:40:36: error: 'Py_ssize_t' was not declared in this scope
+ PyAPI_FUNC(PyObject *) PyTuple_New(Py_ssize_t size);
+                                    ^
+In file included from D:\Anaconda\include/Python.h:58:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/tupleobject.h:41:12: error: 'Py_ssize_t' does not name a type
+ PyAPI_FUNC(Py_ssize_t) PyTuple_Size(PyObject *);
+            ^
+D:\Anaconda\include/pyport.h:793:34: note: in definition of macro 'PyAPI_FUNC'
+ #       define PyAPI_FUNC(RTYPE) RTYPE
+                                  ^
+In file included from D:\Anaconda\include/Python.h:99:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/tupleobject.h:42:52: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(PyObject *) PyTuple_GetItem(PyObject *, Py_ssize_t);
+                                                    ^
+D:\Anaconda\include/tupleobject.h:43:45: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(int) PyTuple_SetItem(PyObject *, Py_ssize_t, PyObject *);
+                                             ^
+D:\Anaconda\include/tupleobject.h:44:53: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(PyObject *) PyTuple_GetSlice(PyObject *, Py_ssize_t, Py_ssize_t);
+                                                     ^
+D:\Anaconda\include/tupleobject.h:44:65: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(PyObject *) PyTuple_GetSlice(PyObject *, Py_ssize_t, Py_ssize_t);
+                                                                 ^
+D:\Anaconda\include/tupleobject.h:45:46: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(int) _PyTuple_Resize(PyObject **, Py_ssize_t);
+                                              ^
+D:\Anaconda\include/tupleobject.h:46:37: error: 'Py_ssize_t' was not declared in this scope
+ PyAPI_FUNC(PyObject *) PyTuple_Pack(Py_ssize_t, ...);
+                                     ^
+D:\Anaconda\include/tupleobject.h:46:49: error: expected primary-expression before '...' token
+ PyAPI_FUNC(PyObject *) PyTuple_Pack(Py_ssize_t, ...);
+                                                 ^
+D:\Anaconda\include/tupleobject.h:46:52: error: expression list treated as compound expression in initializer [-fpermissive]
+ PyAPI_FUNC(PyObject *) PyTuple_Pack(Py_ssize_t, ...);
+                                                    ^
+In file included from D:\Anaconda\include/Python.h:80:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/object.h:80:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_refcnt;               \
+     ^
+D:\Anaconda\include/object.h:97:5: note: in expansion of macro 'PyObject_HEAD'
+     PyObject_HEAD                       \
+     ^
+D:\Anaconda\include/listobject.h:23:5: note: in expansion of macro 'PyObject_VAR_HEAD'
+     PyObject_VAR_HEAD
+     ^
+D:\Anaconda\include/object.h:98:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_size; /* Number of items in variable part */
+     ^
+D:\Anaconda\include/listobject.h:23:5: note: in expansion of macro 'PyObject_VAR_HEAD'
+     PyObject_VAR_HEAD
+     ^
+In file included from D:\Anaconda\include/Python.h:100:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/listobject.h:38:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t allocated;
+     ^
+D:\Anaconda\include/listobject.h:47:35: error: 'Py_ssize_t' was not declared in this scope
+ PyAPI_FUNC(PyObject *) PyList_New(Py_ssize_t size);
+                                   ^
+In file included from D:\Anaconda\include/Python.h:58:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/listobject.h:48:12: error: 'Py_ssize_t' does not name a type
+ PyAPI_FUNC(Py_ssize_t) PyList_Size(PyObject *);
+            ^
+D:\Anaconda\include/pyport.h:793:34: note: in definition of macro 'PyAPI_FUNC'
+ #       define PyAPI_FUNC(RTYPE) RTYPE
+                                  ^
+In file included from D:\Anaconda\include/Python.h:100:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/listobject.h:49:51: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(PyObject *) PyList_GetItem(PyObject *, Py_ssize_t);
+                                                   ^
+D:\Anaconda\include/listobject.h:50:44: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(int) PyList_SetItem(PyObject *, Py_ssize_t, PyObject *);
+                                            ^
+D:\Anaconda\include/listobject.h:51:43: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(int) PyList_Insert(PyObject *, Py_ssize_t, PyObject *);
+                                           ^
+D:\Anaconda\include/listobject.h:53:52: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(PyObject *) PyList_GetSlice(PyObject *, Py_ssize_t, Py_ssize_t);
+                                                    ^
+D:\Anaconda\include/listobject.h:53:64: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(PyObject *) PyList_GetSlice(PyObject *, Py_ssize_t, Py_ssize_t);
+                                                                ^
+D:\Anaconda\include/listobject.h:54:45: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(int) PyList_SetSlice(PyObject *, Py_ssize_t, Py_ssize_t, PyObject *);
+                                             ^
+D:\Anaconda\include/listobject.h:54:57: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(int) PyList_SetSlice(PyObject *, Py_ssize_t, Py_ssize_t, PyObject *);
+                                                         ^
+In file included from D:\Anaconda\include/Python.h:101:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/dictobject.h:55:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t me_hash;
+     ^
+In file included from D:\Anaconda\include/Python.h:80:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/object.h:80:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_refcnt;               \
+     ^
+D:\Anaconda\include/dictobject.h:71:5: note: in expansion of macro 'PyObject_HEAD'
+     PyObject_HEAD
+     ^
+In file included from D:\Anaconda\include/Python.h:101:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/dictobject.h:72:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ma_fill;  /* # Active + # Dummy */
+     ^
+D:\Anaconda\include/dictobject.h:73:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ma_used;  /* # Active */
+     ^
+D:\Anaconda\include/dictobject.h:79:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ma_mask;
+     ^
+D:\Anaconda\include/dictobject.h:115:19: error: 'Py_ssize_t' has not been declared
+     PyObject *mp, Py_ssize_t *pos, PyObject **key, PyObject **value);
+                   ^
+D:\Anaconda\include/dictobject.h:117:19: error: 'Py_ssize_t' has not been declared
+     PyObject *mp, Py_ssize_t *pos, PyObject **key, PyObject **value, long *hash);
+                   ^
+In file included from D:\Anaconda\include/Python.h:58:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/dictobject.h:121:12: error: 'Py_ssize_t' does not name a type
+ PyAPI_FUNC(Py_ssize_t) PyDict_Size(PyObject *mp);
+            ^
+D:\Anaconda\include/pyport.h:793:34: note: in definition of macro 'PyAPI_FUNC'
+ #       define PyAPI_FUNC(RTYPE) RTYPE
+                                  ^
+In file included from D:\Anaconda\include/Python.h:101:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/dictobject.h:125:44: error: 'Py_ssize_t' was not declared in this scope
+ PyAPI_FUNC(PyObject *) _PyDict_NewPresized(Py_ssize_t minused);
+                                            ^
+In file included from D:\Anaconda\include/Python.h:80:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/object.h:80:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_refcnt;               \
+     ^
+D:\Anaconda\include/setobject.h:36:5: note: in expansion of macro 'PyObject_HEAD'
+     PyObject_HEAD
+     ^
+In file included from D:\Anaconda\include/Python.h:103:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/setobject.h:38:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t fill;  /* # Active + # Dummy */
+     ^
+D:\Anaconda\include/setobject.h:39:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t used;  /* # Active */
+     ^
+D:\Anaconda\include/setobject.h:45:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t mask;
+     ^
+In file included from D:\Anaconda\include/Python.h:58:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/setobject.h:85:12: error: 'Py_ssize_t' does not name a type
+ PyAPI_FUNC(Py_ssize_t) PySet_Size(PyObject *anyset);
+            ^
+D:\Anaconda\include/pyport.h:793:34: note: in definition of macro 'PyAPI_FUNC'
+ #       define PyAPI_FUNC(RTYPE) RTYPE
+                                  ^
+In file included from D:\Anaconda\include/Python.h:103:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/setobject.h:91:44: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(int) _PySet_Next(PyObject *set, Py_ssize_t *pos, PyObject **key);
+                                            ^
+D:\Anaconda\include/setobject.h:92:49: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(int) _PySet_NextEntry(PyObject *set, Py_ssize_t *pos, PyObject **key, long *hash);
+                                                 ^
+In file included from D:\Anaconda\include/Python.h:80:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/object.h:80:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_refcnt;               \
+     ^
+D:\Anaconda\include/methodobject.h:82:5: note: in expansion of macro 'PyObject_HEAD'
+     PyObject_HEAD
+     ^
+D:\Anaconda\include/object.h:80:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_refcnt;               \
+     ^
+D:\Anaconda\include/funcobject.h:22:5: note: in expansion of macro 'PyObject_HEAD'
+     PyObject_HEAD
+     ^
+D:\Anaconda\include/object.h:80:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_refcnt;               \
+     ^
+D:\Anaconda\include/classobject.h:13:5: note: in expansion of macro 'PyObject_HEAD'
+     PyObject_HEAD
+     ^
+D:\Anaconda\include/object.h:80:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_refcnt;               \
+     ^
+D:\Anaconda\include/classobject.h:25:5: note: in expansion of macro 'PyObject_HEAD'
+     PyObject_HEAD
+     ^
+D:\Anaconda\include/object.h:80:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_refcnt;               \
+     ^
+D:\Anaconda\include/classobject.h:32:5: note: in expansion of macro 'PyObject_HEAD'
+     PyObject_HEAD
+     ^
+D:\Anaconda\include/object.h:80:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_refcnt;               \
+     ^
+D:\Anaconda\include/fileobject.h:11:5: note: in expansion of macro 'PyObject_HEAD'
+     PyObject_HEAD
+     ^
+D:\Anaconda\include/object.h:80:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_refcnt;               \
+     ^
+D:\Anaconda\include/cobject.h:79:5: note: in expansion of macro 'PyObject_HEAD'
+     PyObject_HEAD
+     ^
+D:\Anaconda\include/object.h:80:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_refcnt;               \
+     ^
+D:\Anaconda\include/traceback.h:13:2: note: in expansion of macro 'PyObject_HEAD'
+  PyObject_HEAD
+  ^
+D:\Anaconda\include/object.h:80:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_refcnt;               \
+     ^
+D:\Anaconda\include/sliceobject.h:23:5: note: in expansion of macro 'PyObject_HEAD'
+     PyObject_HEAD
+     ^
+In file included from D:\Anaconda\include/Python.h:112:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/sliceobject.h:34:45: error: 'Py_ssize_t' was not declared in this scope
+ PyAPI_FUNC(PyObject *) _PySlice_FromIndices(Py_ssize_t start, Py_ssize_t stop);
+                                             ^
+D:\Anaconda\include/sliceobject.h:34:63: error: 'Py_ssize_t' was not declared in this scope
+ PyAPI_FUNC(PyObject *) _PySlice_FromIndices(Py_ssize_t start, Py_ssize_t stop);
+                                                               ^
+D:\Anaconda\include/sliceobject.h:34:78: error: expression list treated as compound expression in initializer [-fpermissive]
+ PyAPI_FUNC(PyObject *) _PySlice_FromIndices(Py_ssize_t start, Py_ssize_t stop);
+                                                                              ^
+D:\Anaconda\include/sliceobject.h:35:54: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(int) PySlice_GetIndices(PySliceObject *r, Py_ssize_t length,
+                                                      ^
+D:\Anaconda\include/sliceobject.h:36:35: error: 'Py_ssize_t' has not been declared
+                                   Py_ssize_t *start, Py_ssize_t *stop, Py_ssize_t *step);
+                                   ^
+D:\Anaconda\include/sliceobject.h:36:54: error: 'Py_ssize_t' has not been declared
+                                   Py_ssize_t *start, Py_ssize_t *stop, Py_ssize_t *step);
+                                                      ^
+D:\Anaconda\include/sliceobject.h:36:72: error: 'Py_ssize_t' has not been declared
+                                   Py_ssize_t *start, Py_ssize_t *stop, Py_ssize_t *step);
+                                                                        ^
+D:\Anaconda\include/sliceobject.h:37:56: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(int) PySlice_GetIndicesEx(PySliceObject *r, Py_ssize_t length,
+                                                        ^
+D:\Anaconda\include/sliceobject.h:38:9: error: 'Py_ssize_t' has not been declared
+         Py_ssize_t *start, Py_ssize_t *stop, 
+         ^
+D:\Anaconda\include/sliceobject.h:38:28: error: 'Py_ssize_t' has not been declared
+         Py_ssize_t *start, Py_ssize_t *stop, 
+                            ^
+D:\Anaconda\include/sliceobject.h:39:9: error: 'Py_ssize_t' has not been declared
+         Py_ssize_t *step, Py_ssize_t *slicelength);
+         ^
+D:\Anaconda\include/sliceobject.h:39:27: error: 'Py_ssize_t' has not been declared
+         Py_ssize_t *step, Py_ssize_t *slicelength);
+                           ^
+In file included from D:\Anaconda\include/Python.h:80:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/object.h:80:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_refcnt;               \
+     ^
+D:\Anaconda\include/cellobject.h:10:2: note: in expansion of macro 'PyObject_HEAD'
+  PyObject_HEAD
+  ^
+D:\Anaconda\include/object.h:80:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_refcnt;               \
+     ^
+D:\Anaconda\include/genobject.h:13:2: note: in expansion of macro 'PyObject_HEAD'
+  PyObject_HEAD
+  ^
+D:\Anaconda\include/object.h:80:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_refcnt;               \
+     ^
+D:\Anaconda\include/descrobject.h:41:5: note: in expansion of macro 'PyObject_HEAD'
+     PyObject_HEAD \
+     ^
+D:\Anaconda\include/descrobject.h:46:5: note: in expansion of macro 'PyDescr_COMMON'
+     PyDescr_COMMON;
+     ^
+D:\Anaconda\include/object.h:80:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_refcnt;               \
+     ^
+D:\Anaconda\include/descrobject.h:41:5: note: in expansion of macro 'PyObject_HEAD'
+     PyObject_HEAD \
+     ^
+D:\Anaconda\include/descrobject.h:50:5: note: in expansion of macro 'PyDescr_COMMON'
+     PyDescr_COMMON;
+     ^
+D:\Anaconda\include/object.h:80:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_refcnt;               \
+     ^
+D:\Anaconda\include/descrobject.h:41:5: note: in expansion of macro 'PyObject_HEAD'
+     PyObject_HEAD \
+     ^
+D:\Anaconda\include/descrobject.h:55:5: note: in expansion of macro 'PyDescr_COMMON'
+     PyDescr_COMMON;
+     ^
+D:\Anaconda\include/object.h:80:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_refcnt;               \
+     ^
+D:\Anaconda\include/descrobject.h:41:5: note: in expansion of macro 'PyObject_HEAD'
+     PyObject_HEAD \
+     ^
+D:\Anaconda\include/descrobject.h:60:5: note: in expansion of macro 'PyDescr_COMMON'
+     PyDescr_COMMON;
+     ^
+D:\Anaconda\include/object.h:80:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_refcnt;               \
+     ^
+D:\Anaconda\include/descrobject.h:41:5: note: in expansion of macro 'PyObject_HEAD'
+     PyObject_HEAD \
+     ^
+D:\Anaconda\include/descrobject.h:65:5: note: in expansion of macro 'PyDescr_COMMON'
+     PyDescr_COMMON;
+     ^
+In file included from D:\Anaconda\include/Python.h:117:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/warnings.h:9:56: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(int) PyErr_WarnEx(PyObject *, const char *, Py_ssize_t);
+                                                        ^
+In file included from D:\Anaconda\include/Python.h:80:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/object.h:80:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_refcnt;               \
+     ^
+D:\Anaconda\include/weakrefobject.h:16:5: note: in expansion of macro 'PyObject_HEAD'
+     PyObject_HEAD
+     ^
+In file included from D:\Anaconda\include/Python.h:58:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/weakrefobject.h:62:12: error: 'Py_ssize_t' does not name a type
+ PyAPI_FUNC(Py_ssize_t) _PyWeakref_GetWeakrefCount(PyWeakReference *head);
+            ^
+D:\Anaconda\include/pyport.h:793:34: note: in definition of macro 'PyAPI_FUNC'
+ #       define PyAPI_FUNC(RTYPE) RTYPE
+                                  ^
+In file included from D:\Anaconda\include/Python.h:80:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/object.h:80:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_refcnt;               \
+     ^
+D:\Anaconda\include/pyerrors.h:10:5: note: in expansion of macro 'PyObject_HEAD'
+     PyObject_HEAD
+     ^
+D:\Anaconda\include/object.h:80:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_refcnt;               \
+     ^
+D:\Anaconda\include/pyerrors.h:17:5: note: in expansion of macro 'PyObject_HEAD'
+     PyObject_HEAD
+     ^
+D:\Anaconda\include/object.h:80:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_refcnt;               \
+     ^
+D:\Anaconda\include/pyerrors.h:31:5: note: in expansion of macro 'PyObject_HEAD'
+     PyObject_HEAD
+     ^
+In file included from D:\Anaconda\include/Python.h:121:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/pyerrors.h:37:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t start;
+     ^
+D:\Anaconda\include/pyerrors.h:38:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t end;
+     ^
+In file included from D:\Anaconda\include/Python.h:80:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/object.h:80:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_refcnt;               \
+     ^
+D:\Anaconda\include/pyerrors.h:44:5: note: in expansion of macro 'PyObject_HEAD'
+     PyObject_HEAD
+     ^
+D:\Anaconda\include/object.h:80:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_refcnt;               \
+     ^
+D:\Anaconda\include/pyerrors.h:52:5: note: in expansion of macro 'PyObject_HEAD'
+     PyObject_HEAD
+     ^
+D:\Anaconda\include/object.h:80:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_refcnt;               \
+     ^
+D:\Anaconda\include/pyerrors.h:63:5: note: in expansion of macro 'PyObject_HEAD'
+     PyObject_HEAD
+     ^
+In file included from D:\Anaconda\include/Python.h:121:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/pyerrors.h:247:33: error: 'Py_ssize_t' has not been declared
+     const char *, const char *, Py_ssize_t, Py_ssize_t, Py_ssize_t, const char *);
+                                 ^
+D:\Anaconda\include/pyerrors.h:247:45: error: 'Py_ssize_t' has not been declared
+     const char *, const char *, Py_ssize_t, Py_ssize_t, Py_ssize_t, const char *);
+                                             ^
+D:\Anaconda\include/pyerrors.h:247:57: error: 'Py_ssize_t' has not been declared
+     const char *, const char *, Py_ssize_t, Py_ssize_t, Py_ssize_t, const char *);
+                                                         ^
+D:\Anaconda\include/pyerrors.h:251:39: error: 'Py_ssize_t' has not been declared
+     const char *, const Py_UNICODE *, Py_ssize_t, Py_ssize_t, Py_ssize_t, const char *);
+                                       ^
+D:\Anaconda\include/pyerrors.h:251:51: error: 'Py_ssize_t' has not been declared
+     const char *, const Py_UNICODE *, Py_ssize_t, Py_ssize_t, Py_ssize_t, const char *);
+                                                   ^
+D:\Anaconda\include/pyerrors.h:251:63: error: 'Py_ssize_t' has not been declared
+     const char *, const Py_UNICODE *, Py_ssize_t, Py_ssize_t, Py_ssize_t, const char *);
+                                                               ^
+D:\Anaconda\include/pyerrors.h:255:25: error: 'Py_ssize_t' has not been declared
+     const Py_UNICODE *, Py_ssize_t, Py_ssize_t, Py_ssize_t, const char *);
+                         ^
+D:\Anaconda\include/pyerrors.h:255:37: error: 'Py_ssize_t' has not been declared
+     const Py_UNICODE *, Py_ssize_t, Py_ssize_t, Py_ssize_t, const char *);
+                                     ^
+D:\Anaconda\include/pyerrors.h:255:49: error: 'Py_ssize_t' has not been declared
+     const Py_UNICODE *, Py_ssize_t, Py_ssize_t, Py_ssize_t, const char *);
+                                                 ^
+D:\Anaconda\include/pyerrors.h:268:59: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(int) PyUnicodeEncodeError_GetStart(PyObject *, Py_ssize_t *);
+                                                           ^
+D:\Anaconda\include/pyerrors.h:269:59: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(int) PyUnicodeDecodeError_GetStart(PyObject *, Py_ssize_t *);
+                                                           ^
+D:\Anaconda\include/pyerrors.h:270:62: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(int) PyUnicodeTranslateError_GetStart(PyObject *, Py_ssize_t *);
+                                                              ^
+D:\Anaconda\include/pyerrors.h:274:59: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(int) PyUnicodeEncodeError_SetStart(PyObject *, Py_ssize_t);
+                                                           ^
+D:\Anaconda\include/pyerrors.h:275:59: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(int) PyUnicodeDecodeError_SetStart(PyObject *, Py_ssize_t);
+                                                           ^
+D:\Anaconda\include/pyerrors.h:276:62: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(int) PyUnicodeTranslateError_SetStart(PyObject *, Py_ssize_t);
+                                                              ^
+D:\Anaconda\include/pyerrors.h:280:57: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(int) PyUnicodeEncodeError_GetEnd(PyObject *, Py_ssize_t *);
+                                                         ^
+D:\Anaconda\include/pyerrors.h:281:57: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(int) PyUnicodeDecodeError_GetEnd(PyObject *, Py_ssize_t *);
+                                                         ^
+D:\Anaconda\include/pyerrors.h:282:60: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(int) PyUnicodeTranslateError_GetEnd(PyObject *, Py_ssize_t *);
+                                                            ^
+D:\Anaconda\include/pyerrors.h:286:57: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(int) PyUnicodeEncodeError_SetEnd(PyObject *, Py_ssize_t);
+                                                         ^
+D:\Anaconda\include/pyerrors.h:287:57: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(int) PyUnicodeDecodeError_SetEnd(PyObject *, Py_ssize_t);
+                                                         ^
+D:\Anaconda\include/pyerrors.h:288:60: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(int) PyUnicodeTranslateError_SetEnd(PyObject *, Py_ssize_t);
+                                                            ^
+In file included from D:\Anaconda\include/Python.h:126:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/modsupport.h:30:61: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(int) PyArg_UnpackTuple(PyObject *, const char *, Py_ssize_t, Py_ssize_t, ...);
+                                                             ^
+D:\Anaconda\include/modsupport.h:30:73: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(int) PyArg_UnpackTuple(PyObject *, const char *, Py_ssize_t, Py_ssize_t, ...);
+                                                                         ^
+In file included from D:\Anaconda\include/Python.h:127:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/pythonrun.h:178:46: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(int) _PyOS_URandom (void *buffer, Py_ssize_t size);
+                                              ^
+In file included from D:\Anaconda\include/Python.h:128:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/ceval.h:147:48: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(int) _PyEval_SliceIndex(PyObject *, Py_ssize_t *);
+                                                ^
+In file included from D:\Anaconda\include/Python.h:58:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/abstract.h:421:17: error: 'Py_ssize_t' does not name a type
+      PyAPI_FUNC(Py_ssize_t) PyObject_Size(PyObject *o);
+                 ^
+D:\Anaconda\include/pyport.h:793:34: note: in definition of macro 'PyAPI_FUNC'
+ #       define PyAPI_FUNC(RTYPE) RTYPE
+                                  ^
+D:\Anaconda\include/abstract.h:433:17: error: 'Py_ssize_t' does not name a type
+      PyAPI_FUNC(Py_ssize_t) PyObject_Length(PyObject *o);
+                 ^
+D:\Anaconda\include/pyport.h:793:34: note: in definition of macro 'PyAPI_FUNC'
+ #       define PyAPI_FUNC(RTYPE) RTYPE
+                                  ^
+D:\Anaconda\include/abstract.h:436:17: error: 'Py_ssize_t' does not name a type
+      PyAPI_FUNC(Py_ssize_t) _PyObject_LengthHint(PyObject *o, Py_ssize_t);
+                 ^
+D:\Anaconda\include/pyport.h:793:34: note: in definition of macro 'PyAPI_FUNC'
+ #       define PyAPI_FUNC(RTYPE) RTYPE
+                                  ^
+In file included from D:\Anaconda\include/Python.h:133:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/abstract.h:478:43: error: 'Py_ssize_t' has not been declared
+                                           Py_ssize_t *buffer_len);
+                                           ^
+D:\Anaconda\include/abstract.h:503:43: error: 'Py_ssize_t' has not been declared
+                                           Py_ssize_t *buffer_len);
+                                           ^
+D:\Anaconda\include/abstract.h:519:44: error: 'Py_ssize_t' has not been declared
+                                            Py_ssize_t *buffer_len);
+                                            ^
+D:\Anaconda\include/abstract.h:552:62: error: 'Py_ssize_t' has not been declared
+      PyAPI_FUNC(void *) PyBuffer_GetPointer(Py_buffer *view, Py_ssize_t *indices);
+                                                              ^
+D:\Anaconda\include/abstract.h:566:44: error: 'Py_ssize_t' has not been declared
+                                            Py_ssize_t len, char fort);
+                                            ^
+D:\Anaconda\include/abstract.h:569:46: error: 'Py_ssize_t' has not been declared
+                                              Py_ssize_t len, char fort);
+                                              ^
+D:\Anaconda\include/abstract.h:597:53: error: 'Py_ssize_t' has not been declared
+                                                     Py_ssize_t *shape,
+                                                     ^
+D:\Anaconda\include/abstract.h:598:53: error: 'Py_ssize_t' has not been declared
+                                                     Py_ssize_t *strides,
+                                                     ^
+D:\Anaconda\include/abstract.h:609:40: error: 'Py_ssize_t' has not been declared
+                                        Py_ssize_t len, int readonly,
+                                        ^
+In file included from D:\Anaconda\include/Python.h:58:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/abstract.h:860:17: error: 'Py_ssize_t' does not name a type
+      PyAPI_FUNC(Py_ssize_t) PyNumber_AsSsize_t(PyObject *o, PyObject *exc);
+                 ^
+D:\Anaconda\include/pyport.h:793:34: note: in definition of macro 'PyAPI_FUNC'
+ #       define PyAPI_FUNC(RTYPE) RTYPE
+                                  ^
+D:\Anaconda\include/abstract.h:1055:17: error: 'Py_ssize_t' does not name a type
+      PyAPI_FUNC(Py_ssize_t) PySequence_Size(PyObject *o);
+                 ^
+D:\Anaconda\include/pyport.h:793:34: note: in definition of macro 'PyAPI_FUNC'
+ #       define PyAPI_FUNC(RTYPE) RTYPE
+                                  ^
+D:\Anaconda\include/abstract.h:1064:17: error: 'Py_ssize_t' does not name a type
+      PyAPI_FUNC(Py_ssize_t) PySequence_Length(PyObject *o);
+                 ^
+D:\Anaconda\include/pyport.h:793:34: note: in definition of macro 'PyAPI_FUNC'
+ #       define PyAPI_FUNC(RTYPE) RTYPE
+                                  ^
+In file included from D:\Anaconda\include/Python.h:133:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/abstract.h:1077:60: error: 'Py_ssize_t' has not been declared
+      PyAPI_FUNC(PyObject *) PySequence_Repeat(PyObject *o, Py_ssize_t count);
+                                                            ^
+D:\Anaconda\include/abstract.h:1086:61: error: 'Py_ssize_t' has not been declared
+      PyAPI_FUNC(PyObject *) PySequence_GetItem(PyObject *o, Py_ssize_t i);
+                                                             ^
+D:\Anaconda\include/abstract.h:1093:62: error: 'Py_ssize_t' has not been declared
+      PyAPI_FUNC(PyObject *) PySequence_GetSlice(PyObject *o, Py_ssize_t i1, Py_ssize_t i2);
+                                                              ^
+D:\Anaconda\include/abstract.h:1093:77: error: 'Py_ssize_t' has not been declared
+      PyAPI_FUNC(PyObject *) PySequence_GetSlice(PyObject *o, Py_ssize_t i1, Py_ssize_t i2);
+                                                                             ^
+D:\Anaconda\include/abstract.h:1102:54: error: 'Py_ssize_t' has not been declared
+      PyAPI_FUNC(int) PySequence_SetItem(PyObject *o, Py_ssize_t i, PyObject *v);
+                                                      ^
+D:\Anaconda\include/abstract.h:1111:54: error: 'Py_ssize_t' has not been declared
+      PyAPI_FUNC(int) PySequence_DelItem(PyObject *o, Py_ssize_t i);
+                                                      ^
+D:\Anaconda\include/abstract.h:1119:55: error: 'Py_ssize_t' has not been declared
+      PyAPI_FUNC(int) PySequence_SetSlice(PyObject *o, Py_ssize_t i1, Py_ssize_t i2,
+                                                       ^
+D:\Anaconda\include/abstract.h:1119:70: error: 'Py_ssize_t' has not been declared
+      PyAPI_FUNC(int) PySequence_SetSlice(PyObject *o, Py_ssize_t i1, Py_ssize_t i2,
+                                                                      ^
+D:\Anaconda\include/abstract.h:1128:55: error: 'Py_ssize_t' has not been declared
+      PyAPI_FUNC(int) PySequence_DelSlice(PyObject *o, Py_ssize_t i1, Py_ssize_t i2);
+                                                       ^
+D:\Anaconda\include/abstract.h:1128:70: error: 'Py_ssize_t' has not been declared
+      PyAPI_FUNC(int) PySequence_DelSlice(PyObject *o, Py_ssize_t i1, Py_ssize_t i2);
+                                                                      ^
+In file included from D:\Anaconda\include/Python.h:58:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/abstract.h:1186:17: error: 'Py_ssize_t' does not name a type
+      PyAPI_FUNC(Py_ssize_t) PySequence_Count(PyObject *o, PyObject *value);
+                 ^
+D:\Anaconda\include/pyport.h:793:34: note: in definition of macro 'PyAPI_FUNC'
+ #       define PyAPI_FUNC(RTYPE) RTYPE
+                                  ^
+D:\Anaconda\include/abstract.h:1204:17: error: 'Py_ssize_t' does not name a type
+      PyAPI_FUNC(Py_ssize_t) _PySequence_IterSearch(PyObject *seq,
+                 ^
+D:\Anaconda\include/pyport.h:793:34: note: in definition of macro 'PyAPI_FUNC'
+ #       define PyAPI_FUNC(RTYPE) RTYPE
+                                  ^
+D:\Anaconda\include/abstract.h:1230:17: error: 'Py_ssize_t' does not name a type
+      PyAPI_FUNC(Py_ssize_t) PySequence_Index(PyObject *o, PyObject *value);
+                 ^
+D:\Anaconda\include/pyport.h:793:34: note: in definition of macro 'PyAPI_FUNC'
+ #       define PyAPI_FUNC(RTYPE) RTYPE
+                                  ^
+In file included from D:\Anaconda\include/Python.h:133:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/abstract.h:1249:67: error: 'Py_ssize_t' has not been declared
+      PyAPI_FUNC(PyObject *) PySequence_InPlaceRepeat(PyObject *o, Py_ssize_t count);
+                                                                   ^
+In file included from D:\Anaconda\include/Python.h:58:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/abstract.h:1269:17: error: 'Py_ssize_t' does not name a type
+      PyAPI_FUNC(Py_ssize_t) PyMapping_Size(PyObject *o);
+                 ^
+D:\Anaconda\include/pyport.h:793:34: note: in definition of macro 'PyAPI_FUNC'
+ #       define PyAPI_FUNC(RTYPE) RTYPE
+                                  ^
+D:\Anaconda\include/abstract.h:1279:17: error: 'Py_ssize_t' does not name a type
+      PyAPI_FUNC(Py_ssize_t) PyMapping_Length(PyObject *o);
+                 ^
+D:\Anaconda\include/pyport.h:793:34: note: in definition of macro 'PyAPI_FUNC'
+ #       define PyAPI_FUNC(RTYPE) RTYPE
+                                  ^
+In file included from D:\Anaconda\include/Python.h:133:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/abstract.h:1387:49: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(void) _Py_add_one_to_index_F(int nd, Py_ssize_t *index,
+                                                 ^
+D:\Anaconda\include/abstract.h:1388:47: error: 'Py_ssize_t' does not name a type
+                                         const Py_ssize_t *shape);
+                                               ^
+D:\Anaconda\include/abstract.h:1389:49: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(void) _Py_add_one_to_index_C(int nd, Py_ssize_t *index,
+                                                 ^
+D:\Anaconda\include/abstract.h:1390:47: error: 'Py_ssize_t' does not name a type
+                                         const Py_ssize_t *shape);
+                                               ^
+In file included from D:\Anaconda\include/Python.h:80:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/object.h:80:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_refcnt;               \
+     ^
+D:\Anaconda\include/code.h:11:5: note: in expansion of macro 'PyObject_HEAD'
+     PyObject_HEAD
+     ^
+In file included from D:\Anaconda\include/Python.h:140:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/pystrcmp.h:8:61: error: 'Py_ssize_t' has not been declared
+ PyAPI_FUNC(int) PyOS_mystrnicmp(const char *, const char *, Py_ssize_t);
+                                                             ^
+In file included from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:2:0:
+D:\Anaconda\include/structmember.h:40:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t offset;
+     ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:52:54: error: 'Py_ssize_t' has not been declared
+ static int unpack_list_of_ssize_t(PyObject * pylist, Py_ssize_t **dst, Py_ssize_t *len,
+                                                      ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:52:72: error: 'Py_ssize_t' has not been declared
+ static int unpack_list_of_ssize_t(PyObject * pylist, Py_ssize_t **dst, Py_ssize_t *len,
+                                                                        ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp: In function 'int unpack_list_of_ssize_t(PyObject*, int**, int*, const char*)':
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:55:3: error: 'Py_ssize_t' was not declared in this scope
+   Py_ssize_t buflen, *buf;
+   ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:62:10: error: 'buflen' was not declared in this scope
+   *len = buflen = PyList_Size(pylist);
+          ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:62:37: error: 'PyList_Size' was not declared in this scope
+   *len = buflen = PyList_Size(pylist);
+                                     ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:63:10: error: 'buf' was not declared in this scope
+   *dst = buf = (Py_ssize_t*)calloc(buflen, sizeof(Py_ssize_t));
+          ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:63:28: error: expected primary-expression before ')' token
+   *dst = buf = (Py_ssize_t*)calloc(buflen, sizeof(Py_ssize_t));
+                            ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:68:18: error: expected ';' before 'n_i'
+       Py_ssize_t n_i = PyNumber_AsSsize_t(el_i, PyExc_IndexError);
+                  ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:75:17: error: 'n_i' was not declared in this scope
+       buf[ii] = n_i;
+                 ^
+In file included from D:\Anaconda\include/Python.h:80:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp: At global scope:
+D:\Anaconda\include/object.h:80:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ob_refcnt;               \
+     ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:87:5: note: in expansion of macro 'PyObject_HEAD'
+     PyObject_HEAD
+     ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:93:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t n_applies;
+     ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:98:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t **dependencies; // list of vars dependencies for GC
+     ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:99:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t *n_dependencies;
+     ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:101:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t n_output_vars;
+     ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:102:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t * output_vars; // variables that *must* be evaluated by call
+     ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:106:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t * var_owner; // nodes[[var_owner[var_idx]]] is var[var_idx]->owner
+     ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:109:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t * node_n_inputs;
+     ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:110:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t * node_n_outputs;
+     ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:111:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ** node_inputs;
+     ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:112:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ** node_outputs;
+     ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:113:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t * node_inputs_outputs_base; // node_inputs and node_outputs point into this
+     ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:114:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t * node_n_prereqs;
+     ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:115:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t ** node_prereqs;
+     ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:117:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t * update_storage; // input cells to update with the last outputs in output_vars
+     ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:118:5: error: 'Py_ssize_t' does not name a type
+     Py_ssize_t n_updates;
+     ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp: In function 'void CLazyLinker_dealloc(PyObject*)':
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:139:14: error: 'struct CLazyLinker' has no member named 'update_storage'
+   free(self->update_storage);
+              ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:141:13: error: 'struct CLazyLinker' has no member named 'node_n_prereqs'
+   if (self->node_n_prereqs)
+             ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:143:33: error: 'struct CLazyLinker' has no member named 'n_applies'
+       for (int i = 0; i < self->n_applies; ++i)
+                                 ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:145:22: error: 'struct CLazyLinker' has no member named 'node_prereqs'
+           free(self->node_prereqs[i]);
+                      ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:148:14: error: 'struct CLazyLinker' has no member named 'node_n_prereqs'
+   free(self->node_n_prereqs);
+              ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:149:14: error: 'struct CLazyLinker' has no member named 'node_prereqs'
+   free(self->node_prereqs);
+              ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:150:14: error: 'struct CLazyLinker' has no member named 'node_inputs_outputs_base'
+   free(self->node_inputs_outputs_base);
+              ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:151:14: error: 'struct CLazyLinker' has no member named 'node_n_inputs'
+   free(self->node_n_inputs);
+              ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:152:14: error: 'struct CLazyLinker' has no member named 'node_n_outputs'
+   free(self->node_n_outputs);
+              ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:153:14: error: 'struct CLazyLinker' has no member named 'node_inputs'
+   free(self->node_inputs);
+              ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:154:14: error: 'struct CLazyLinker' has no member named 'node_outputs'
+   free(self->node_outputs);
+              ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:156:13: error: 'struct CLazyLinker' has no member named 'dependencies'
+   if (self->dependencies)
+             ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:160:22: error: 'struct CLazyLinker' has no member named 'dependencies'
+           free(self->dependencies[i]);
+                      ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:162:18: error: 'struct CLazyLinker' has no member named 'dependencies'
+       free(self->dependencies);
+                  ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:163:18: error: 'struct CLazyLinker' has no member named 'n_dependencies'
+       free(self->n_dependencies);
+                  ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:166:14: error: 'struct CLazyLinker' has no member named 'var_owner'
+   free(self->var_owner);
+              ^
+In file included from D:\Anaconda\include/Python.h:80:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/object.h:774:30: error: 'PyObject' has no member named 'ob_refcnt'
+         --((PyObject*)(op))->ob_refcnt != 0)            \
+                              ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:173:11: note: in expansion of macro 'Py_DECREF'
+           Py_DECREF(self->var_computed_cells[i]);
+           ^
+D:\Anaconda\include/object.h:774:30: error: 'PyObject' has no member named 'ob_refcnt'
+         --((PyObject*)(op))->ob_refcnt != 0)            \
+                              ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:174:11: note: in expansion of macro 'Py_DECREF'
+           Py_DECREF(self->var_value_cells[i]);
+           ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:179:14: error: 'struct CLazyLinker' has no member named 'output_vars'
+   free(self->output_vars);
+              ^
+In file included from D:\Anaconda\include/Python.h:80:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/object.h:774:30: error: 'PyObject' has no member named 'ob_refcnt'
+         --((PyObject*)(op))->ob_refcnt != 0)            \
+                              ^
+D:\Anaconda\include/object.h:825:54: note: in expansion of macro 'Py_DECREF'
+ #define Py_XDECREF(op) do { if ((op) == NULL) ; else Py_DECREF(op); } while (0)
+                                                      ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:181:3: note: in expansion of macro 'Py_XDECREF'
+   Py_XDECREF(self->nodes);
+   ^
+D:\Anaconda\include/object.h:774:30: error: 'PyObject' has no member named 'ob_refcnt'
+         --((PyObject*)(op))->ob_refcnt != 0)            \
+                              ^
+D:\Anaconda\include/object.h:825:54: note: in expansion of macro 'Py_DECREF'
+ #define Py_XDECREF(op) do { if ((op) == NULL) ; else Py_DECREF(op); } while (0)
+                                                      ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:182:3: note: in expansion of macro 'Py_XDECREF'
+   Py_XDECREF(self->thunks);
+   ^
+D:\Anaconda\include/object.h:774:30: error: 'PyObject' has no member named 'ob_refcnt'
+         --((PyObject*)(op))->ob_refcnt != 0)            \
+                              ^
+D:\Anaconda\include/object.h:825:54: note: in expansion of macro 'Py_DECREF'
+ #define Py_XDECREF(op) do { if ((op) == NULL) ; else Py_DECREF(op); } while (0)
+                                                      ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:183:3: note: in expansion of macro 'Py_XDECREF'
+   Py_XDECREF(self->call_times);
+   ^
+D:\Anaconda\include/object.h:774:30: error: 'PyObject' has no member named 'ob_refcnt'
+         --((PyObject*)(op))->ob_refcnt != 0)            \
+                              ^
+D:\Anaconda\include/object.h:825:54: note: in expansion of macro 'Py_DECREF'
+ #define Py_XDECREF(op) do { if ((op) == NULL) ; else Py_DECREF(op); } while (0)
+                                                      ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:184:3: note: in expansion of macro 'Py_XDECREF'
+   Py_XDECREF(self->call_counts);
+   ^
+D:\Anaconda\include/object.h:774:30: error: 'PyObject' has no member named 'ob_refcnt'
+         --((PyObject*)(op))->ob_refcnt != 0)            \
+                              ^
+D:\Anaconda\include/object.h:825:54: note: in expansion of macro 'Py_DECREF'
+ #define Py_XDECREF(op) do { if ((op) == NULL) ; else Py_DECREF(op); } while (0)
+                                                      ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:185:3: note: in expansion of macro 'Py_XDECREF'
+   Py_XDECREF(self->pre_call_clear);
+   ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp: In function 'PyObject* CLazyLinker_new(PyTypeObject*, PyObject*, PyObject*)':
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:200:13: error: 'struct CLazyLinker' has no member named 'n_applies'
+       self->n_applies = 0;
+             ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:205:13: error: 'struct CLazyLinker' has no member named 'dependencies'
+       self->dependencies = NULL;
+             ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:206:13: error: 'struct CLazyLinker' has no member named 'n_dependencies'
+       self->n_dependencies = NULL;
+             ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:208:13: error: 'struct CLazyLinker' has no member named 'n_output_vars'
+       self->n_output_vars = 0;
+             ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:209:13: error: 'struct CLazyLinker' has no member named 'output_vars'
+       self->output_vars = NULL;
+             ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:213:13: error: 'struct CLazyLinker' has no member named 'var_owner'
+       self->var_owner = NULL;
+             ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:216:13: error: 'struct CLazyLinker' has no member named 'node_n_inputs'
+       self->node_n_inputs = NULL;
+             ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:217:13: error: 'struct CLazyLinker' has no member named 'node_n_outputs'
+       self->node_n_outputs = NULL;
+             ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:218:13: error: 'struct CLazyLinker' has no member named 'node_inputs'
+       self->node_inputs = NULL;
+             ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:219:13: error: 'struct CLazyLinker' has no member named 'node_outputs'
+       self->node_outputs = NULL;
+             ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:220:13: error: 'struct CLazyLinker' has no member named 'node_inputs_outputs_base'
+       self->node_inputs_outputs_base = NULL;
+             ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:221:13: error: 'struct CLazyLinker' has no member named 'node_prereqs'
+       self->node_prereqs = NULL;
+             ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:222:13: error: 'struct CLazyLinker' has no member named 'node_n_prereqs'
+       self->node_n_prereqs = NULL;
+             ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:224:13: error: 'struct CLazyLinker' has no member named 'update_storage'
+       self->update_storage = NULL;
+             ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:225:13: error: 'struct CLazyLinker' has no member named 'n_updates'
+       self->n_updates = 0;
+             ^
+In file included from D:\Anaconda\include/Python.h:80:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp: In function 'int CLazyLinker_init(CLazyLinker*, PyObject*, PyObject*)':
+D:\Anaconda\include/object.h:769:24: error: 'PyObject' has no member named 'ob_refcnt'
+     ((PyObject*)(op))->ob_refcnt++)
+                        ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:304:5: note: in expansion of macro 'Py_INCREF'
+     Py_INCREF(self->nodes);
+     ^
+D:\Anaconda\include/object.h:769:24: error: 'PyObject' has no member named 'ob_refcnt'
+     ((PyObject*)(op))->ob_refcnt++)
+                        ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:305:5: note: in expansion of macro 'Py_INCREF'
+     Py_INCREF(self->thunks);
+     ^
+D:\Anaconda\include/object.h:769:24: error: 'PyObject' has no member named 'ob_refcnt'
+     ((PyObject*)(op))->ob_refcnt++)
+                        ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:306:5: note: in expansion of macro 'Py_INCREF'
+     Py_INCREF(self->pre_call_clear);
+     ^
+D:\Anaconda\include/object.h:769:24: error: 'PyObject' has no member named 'ob_refcnt'
+     ((PyObject*)(op))->ob_refcnt++)
+                        ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:307:5: note: in expansion of macro 'Py_INCREF'
+     Py_INCREF(self->call_counts);
+     ^
+D:\Anaconda\include/object.h:769:24: error: 'PyObject' has no member named 'ob_refcnt'
+     ((PyObject*)(op))->ob_refcnt++)
+                        ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:308:5: note: in expansion of macro 'Py_INCREF'
+     Py_INCREF(self->call_times);
+     ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:310:5: error: 'Py_ssize_t' was not declared in this scope
+     Py_ssize_t n_applies = PyList_Size(self->nodes);
+     ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:312:11: error: 'struct CLazyLinker' has no member named 'n_applies'
+     self->n_applies = n_applies;
+           ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:312:23: error: 'n_applies' was not declared in this scope
+     self->n_applies = n_applies;
+                       ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:313:41: error: 'PyList_Size' was not declared in this scope
+     self->n_vars = PyList_Size(var_owner);
+                                         ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:325:15: error: 'struct CLazyLinker' has no member named 'node_prereqs'
+         self->node_prereqs = (Py_ssize_t**)calloc(n_applies, sizeof(Py_ssize_t*));
+               ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:325:43: error: expected primary-expression before ')' token
+         self->node_prereqs = (Py_ssize_t**)calloc(n_applies, sizeof(Py_ssize_t*));
+                                           ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:326:15: error: 'struct CLazyLinker' has no member named 'node_n_prereqs'
+         self->node_n_prereqs = (Py_ssize_t*)calloc(n_applies, sizeof(Py_ssize_t));
+               ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:326:44: error: expected primary-expression before ')' token
+         self->node_n_prereqs = (Py_ssize_t*)calloc(n_applies, sizeof(Py_ssize_t));
+                                            ^
+In file included from D:\Anaconda\include/Python.h:56:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:327:22: error: 'struct CLazyLinker' has no member named 'node_prereqs'
+         assert(self->node_prereqs);
+                      ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:328:22: error: 'struct CLazyLinker' has no member named 'node_n_prereqs'
+         assert(self->node_n_prereqs);
+                      ^
+In file included from D:\Anaconda\include/Python.h:80:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/object.h:774:30: error: 'PyObject' has no member named 'ob_refcnt'
+         --((PyObject*)(op))->ob_refcnt != 0)            \
+                              ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:344:17: note: in expansion of macro 'Py_DECREF'
+                 Py_DECREF(cthunk);
+                 ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:349:61: error: 'PyNumber_AsSsize_t' was not declared in this scope
+             self->is_lazy[i] = PyNumber_AsSsize_t(el_i, NULL);
+                                                             ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:354:19: error: 'struct CLazyLinker' has no member named 'node_n_prereqs'
+             self->node_n_prereqs[i] = PyList_Size(el_i);
+                   ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:355:23: error: 'struct CLazyLinker' has no member named 'node_n_prereqs'
+             if (self->node_n_prereqs[i])
+                       ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:357:23: error: 'struct CLazyLinker' has no member named 'node_prereqs'
+                 self->node_prereqs[i] = (Py_ssize_t*)malloc(
+                       ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:357:53: error: expected primary-expression before ')' token
+                 self->node_prereqs[i] = (Py_ssize_t*)malloc(
+                                                     ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:362:32: error: expected ';' before 'N'
+                     Py_ssize_t N = PyNumber_AsSsize_t(el_ij, PyExc_IndexError);
+                                ^
+In file included from D:\Anaconda\include/Python.h:56:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:366:28: error: 'N' was not declared in this scope
+                     assert(N < PyList_Size(var_owner));
+                            ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:367:27: error: 'struct CLazyLinker' has no member named 'node_prereqs'
+                     self->node_prereqs[i][j] = N;
+                           ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:374:20: error: expected ';' before 'n_inputs_outputs_base'
+         Py_ssize_t n_inputs_outputs_base = PyList_Size(base_input_output_list);
+                    ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:375:15: error: 'struct CLazyLinker' has no member named 'node_inputs_outputs_base'
+         self->node_inputs_outputs_base = (Py_ssize_t*)calloc(n_inputs_outputs_base,sizeof(Py_ssize_t));
+               ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:375:54: error: expected primary-expression before ')' token
+         self->node_inputs_outputs_base = (Py_ssize_t*)calloc(n_inputs_outputs_base,sizeof(Py_ssize_t));
+                                                      ^
+In file included from D:\Anaconda\include/Python.h:56:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:376:22: error: 'struct CLazyLinker' has no member named 'node_inputs_outputs_base'
+         assert(self->node_inputs_outputs_base);
+                      ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:377:29: error: 'n_inputs_outputs_base' was not declared in this scope
+         for (int i = 0; i < n_inputs_outputs_base; ++i)
+                             ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:380:24: error: expected ';' before 'idx'
+             Py_ssize_t idx = PyNumber_AsSsize_t(el_i, PyExc_IndexError);
+                        ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:382:19: error: 'struct CLazyLinker' has no member named 'node_inputs_outputs_base'
+             self->node_inputs_outputs_base[i] = idx;
+                   ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:382:49: error: 'idx' was not declared in this scope
+             self->node_inputs_outputs_base[i] = idx;
+                                                 ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:384:15: error: 'struct CLazyLinker' has no member named 'node_n_inputs'
+         self->node_n_inputs = (Py_ssize_t*)calloc(n_applies,sizeof(Py_ssize_t));
+               ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:384:43: error: expected primary-expression before ')' token
+         self->node_n_inputs = (Py_ssize_t*)calloc(n_applies,sizeof(Py_ssize_t));
+                                           ^
+In file included from D:\Anaconda\include/Python.h:56:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:385:22: error: 'struct CLazyLinker' has no member named 'node_n_inputs'
+         assert(self->node_n_inputs);
+                      ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:386:15: error: 'struct CLazyLinker' has no member named 'node_n_outputs'
+         self->node_n_outputs = (Py_ssize_t*)calloc(n_applies,sizeof(Py_ssize_t));
+               ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:386:44: error: expected primary-expression before ')' token
+         self->node_n_outputs = (Py_ssize_t*)calloc(n_applies,sizeof(Py_ssize_t));
+                                            ^
+In file included from D:\Anaconda\include/Python.h:56:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:387:22: error: 'struct CLazyLinker' has no member named 'node_n_outputs'
+         assert(self->node_n_outputs);
+                      ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:388:15: error: 'struct CLazyLinker' has no member named 'node_inputs'
+         self->node_inputs = (Py_ssize_t**)calloc(n_applies,sizeof(Py_ssize_t*));
+               ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:388:42: error: expected primary-expression before ')' token
+         self->node_inputs = (Py_ssize_t**)calloc(n_applies,sizeof(Py_ssize_t*));
+                                          ^
+In file included from D:\Anaconda\include/Python.h:56:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:389:22: error: 'struct CLazyLinker' has no member named 'node_inputs'
+         assert(self->node_inputs);
+                      ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:390:15: error: 'struct CLazyLinker' has no member named 'node_outputs'
+         self->node_outputs = (Py_ssize_t**)calloc(n_applies,sizeof(Py_ssize_t*));
+               ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:390:43: error: expected primary-expression before ')' token
+         self->node_outputs = (Py_ssize_t**)calloc(n_applies,sizeof(Py_ssize_t*));
+                                           ^
+In file included from D:\Anaconda\include/Python.h:56:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:391:22: error: 'struct CLazyLinker' has no member named 'node_outputs'
+         assert(self->node_outputs);
+                      ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:394:24: error: expected ';' before 'N'
+             Py_ssize_t N;
+                        ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:395:13: error: 'N' was not declared in this scope
+             N = PyNumber_AsSsize_t(PyList_GetItem(node_n_inputs, i),PyExc_IndexError);
+             ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:395:85: error: 'PyNumber_AsSsize_t' was not declared in this scope
+             N = PyNumber_AsSsize_t(PyList_GetItem(node_n_inputs, i),PyExc_IndexError);
+                                                                                     ^
+In file included from D:\Anaconda\include/Python.h:56:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:397:26: error: 'n_inputs_outputs_base' was not declared in this scope
+             assert (N <= n_inputs_outputs_base);
+                          ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:398:19: error: 'struct CLazyLinker' has no member named 'node_n_inputs'
+             self->node_n_inputs[i] = N;
+                   ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:402:19: error: 'struct CLazyLinker' has no member named 'node_n_outputs'
+             self->node_n_outputs[i] = N;
+                   ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:406:19: error: 'struct CLazyLinker' has no member named 'node_inputs'
+             self->node_inputs[i] = &self->node_inputs_outputs_base[N];
+                   ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:406:43: error: 'struct CLazyLinker' has no member named 'node_inputs_outputs_base'
+             self->node_inputs[i] = &self->node_inputs_outputs_base[N];
+                                           ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:410:19: error: 'struct CLazyLinker' has no member named 'node_outputs'
+             self->node_outputs[i] = &self->node_inputs_outputs_base[N];
+                   ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:410:44: error: 'struct CLazyLinker' has no member named 'node_inputs_outputs_base'
+             self->node_outputs[i] = &self->node_inputs_outputs_base[N];
+                                            ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:422:15: error: 'struct CLazyLinker' has no member named 'var_owner'
+         self->var_owner = (Py_ssize_t*)calloc(self->n_vars,sizeof(Py_ssize_t));
+               ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:422:39: error: expected primary-expression before ')' token
+         self->var_owner = (Py_ssize_t*)calloc(self->n_vars,sizeof(Py_ssize_t));
+                                       ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:436:28: error: expected ';' before 'N'
+                 Py_ssize_t N = PyNumber_AsSsize_t(el_i, PyExc_IndexError);
+                            ^
+In file included from D:\Anaconda\include/Python.h:56:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:438:25: error: 'N' was not declared in this scope
+                 assert (N <= n_applies);
+                         ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:439:23: error: 'struct CLazyLinker' has no member named 'var_owner'
+                 self->var_owner[i] = N;
+                       ^
+In file included from D:\Anaconda\include/Python.h:80:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/object.h:769:24: error: 'PyObject' has no member named 'ob_refcnt'
+     ((PyObject*)(op))->ob_refcnt++)
+                        ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:443:13: note: in expansion of macro 'Py_INCREF'
+             Py_INCREF(self->var_computed_cells[i]);
+             ^
+D:\Anaconda\include/object.h:769:24: error: 'PyObject' has no member named 'ob_refcnt'
+     ((PyObject*)(op))->ob_refcnt++)
+                        ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:445:13: note: in expansion of macro 'Py_INCREF'
+             Py_INCREF(self->var_value_cells[i]);
+             ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:456:15: error: 'struct CLazyLinker' has no member named 'dependencies'
+         self->dependencies = (Py_ssize_t**)calloc(self->n_vars, sizeof(Py_ssize_t *));
+               ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:456:43: error: expected primary-expression before ')' token
+         self->dependencies = (Py_ssize_t**)calloc(self->n_vars, sizeof(Py_ssize_t *));
+                                           ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:457:15: error: 'struct CLazyLinker' has no member named 'n_dependencies'
+         self->n_dependencies = (Py_ssize_t*)calloc(self->n_vars, sizeof(Py_ssize_t));
+               ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:457:44: error: expected primary-expression before ')' token
+         self->n_dependencies = (Py_ssize_t*)calloc(self->n_vars, sizeof(Py_ssize_t));
+                                            ^
+In file included from D:\Anaconda\include/Python.h:56:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:458:22: error: 'struct CLazyLinker' has no member named 'dependencies'
+         assert(self->dependencies);
+                      ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:459:22: error: 'struct CLazyLinker' has no member named 'n_dependencies'
+         assert(self->n_dependencies);
+                      ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:465:52: error: 'struct CLazyLinker' has no member named 'dependencies'
+             if (unpack_list_of_ssize_t(tmp, &self->dependencies[i], &self->n_dependencies[i],
+                                                    ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:465:76: error: 'struct CLazyLinker' has no member named 'n_dependencies'
+             if (unpack_list_of_ssize_t(tmp, &self->dependencies[i], &self->n_dependencies[i],
+                                                                            ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:471:52: error: 'struct CLazyLinker' has no member named 'output_vars'
+     if (unpack_list_of_ssize_t(output_vars, &self->output_vars, &self->n_output_vars,
+                                                    ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:471:72: error: 'struct CLazyLinker' has no member named 'n_output_vars'
+     if (unpack_list_of_ssize_t(output_vars, &self->output_vars, &self->n_output_vars,
+                                                                        ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:474:31: error: 'struct CLazyLinker' has no member named 'n_output_vars'
+     for (int i = 0; i < self->n_output_vars; ++i)
+                               ^
+In file included from D:\Anaconda\include/Python.h:56:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:476:22: error: 'struct CLazyLinker' has no member named 'output_vars'
+         assert(self->output_vars[i] < self->n_vars);
+                      ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:478:55: error: 'struct CLazyLinker' has no member named 'update_storage'
+     if (unpack_list_of_ssize_t(update_storage, &self->update_storage, &self->n_updates,
+                                                       ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:478:78: error: 'struct CLazyLinker' has no member named 'n_updates'
+     if (unpack_list_of_ssize_t(update_storage, &self->update_storage, &self->n_updates,
+                                                                              ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp: At global scope:
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:490:46: error: 'Py_ssize_t' has not been declared
+ static PyObject * pycall(CLazyLinker * self, Py_ssize_t node_idx, int verbose)
+                                              ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:524:39: error: 'Py_ssize_t' has not been declared
+ static int c_call(CLazyLinker * self, Py_ssize_t node_idx, int verbose)
+                                       ^
+In file included from D:\Anaconda\include/Python.h:56:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp: In function 'int c_call(CLazyLinker*, int, int)':
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:551:34: error: 'PyList_Size' was not declared in this scope
+       assert (PyList_Size(__ERROR) == 3);
+                                  ^
+In file included from D:\Anaconda\include/Python.h:80:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/object.h:769:24: error: 'PyObject' has no member named 'ob_refcnt'
+     ((PyObject*)(op))->ob_refcnt++)
+                        ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:555:45: note: in expansion of macro 'Py_INCREF'
+       PyList_SET_ITEM(__ERROR, 0, Py_None); Py_INCREF(Py_None); //clobbers old ref
+                                             ^
+D:\Anaconda\include/object.h:769:24: error: 'PyObject' has no member named 'ob_refcnt'
+     ((PyObject*)(op))->ob_refcnt++)
+                        ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:556:45: note: in expansion of macro 'Py_INCREF'
+       PyList_SET_ITEM(__ERROR, 1, Py_None); Py_INCREF(Py_None); //clobbers old ref
+                                             ^
+D:\Anaconda\include/object.h:769:24: error: 'PyObject' has no member named 'ob_refcnt'
+     ((PyObject*)(op))->ob_refcnt++)
+                        ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:557:45: note: in expansion of macro 'Py_INCREF'
+       PyList_SET_ITEM(__ERROR, 2, Py_None); Py_INCREF(Py_None); //clobbers old ref
+                                             ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp: At global scope:
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:566:39: error: 'Py_ssize_t' has not been declared
+ int lazy_rec_eval(CLazyLinker * self, Py_ssize_t var_idx, PyObject*one, PyObject*zero)
+                                       ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp: In function 'int lazy_rec_eval(CLazyLinker*, int, PyObject*, PyObject*)':
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:577:3: error: 'Py_ssize_t' was not declared in this scope
+   Py_ssize_t owner_idx = self->var_owner[var_idx];
+   ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:581:29: error: 'struct CLazyLinker' has no member named 'node_n_prereqs'
+   for (int i = 0; i < self->node_n_prereqs[owner_idx]; ++i)
+                             ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:581:44: error: 'owner_idx' was not declared in this scope
+   for (int i = 0; i < self->node_n_prereqs[owner_idx]; ++i)
+                                            ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:583:18: error: expected ';' before 'prereq_idx'
+       Py_ssize_t prereq_idx = self->node_prereqs[owner_idx][i];
+                  ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:584:31: error: 'prereq_idx' was not declared in this scope
+       if (!self->var_computed[prereq_idx])
+                               ^
+In file included from D:\Anaconda\include/Python.h:56:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:589:34: error: 'prereq_idx' was not declared in this scope
+       assert (self->var_computed[prereq_idx]);
+                                  ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:593:21: error: 'owner_idx' was not declared in this scope
+   if (self->is_lazy[owner_idx])
+                     ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:596:33: error: 'struct CLazyLinker' has no member named 'node_n_inputs'
+       for (int i = 0; i < self->node_n_inputs[owner_idx]; ++i)
+                                 ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:598:30: error: 'struct CLazyLinker' has no member named 'node_inputs'
+           int in_idx = self->node_inputs[owner_idx][i];
+                              ^
+In file included from D:\Anaconda\include/Python.h:80:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/object.h:769:24: error: 'PyObject' has no member named 'ob_refcnt'
+     ((PyObject*)(op))->ob_refcnt++)
+                        ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:601:15: note: in expansion of macro 'Py_INCREF'
+               Py_INCREF(one);
+               ^
+D:\Anaconda\include/object.h:769:24: error: 'PyObject' has no member named 'ob_refcnt'
+     ((PyObject*)(op))->ob_refcnt++)
+                        ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:606:15: note: in expansion of macro 'Py_INCREF'
+               Py_INCREF(zero);
+               ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:624:33: error: 'struct CLazyLinker' has no member named 'node_n_outputs'
+       for (int i = 0; i < self->node_n_outputs[owner_idx]; ++i)
+                                 ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:626:31: error: 'struct CLazyLinker' has no member named 'node_outputs'
+           int out_idx = self->node_outputs[owner_idx][i];
+                               ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:628:22: error: expected ';' before 'N'
+           Py_ssize_t N = PyNumber_AsSsize_t(el_i, PyExc_IndexError);
+                      ^
+In file included from D:\Anaconda\include/Python.h:56:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:634:19: error: 'N' was not declared in this scope
+           assert (N==0 || N==1);
+                   ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:656:32: error: 'PyList_Size' was not declared in this scope
+           if (!PyList_Size(rval))
+                                ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:664:47: error: 'PyList_Size' was not declared in this scope
+           for (int i = 0; i < PyList_Size(rval); ++i)
+                                               ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:667:26: error: expected ';' before 'N'
+               Py_ssize_t N = PyNumber_AsSsize_t(el_i, PyExc_IndexError);
+                          ^
+In file included from D:\Anaconda\include/Python.h:56:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:673:23: error: 'N' was not declared in this scope
+               assert (N <= self->node_n_inputs[owner_idx]);
+                       ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:673:34: error: 'struct CLazyLinker' has no member named 'node_n_inputs'
+               assert (N <= self->node_n_inputs[owner_idx]);
+                                  ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:674:26: error: expected ';' before 'input_idx'
+               Py_ssize_t input_idx = self->node_inputs[owner_idx][N];
+                          ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:675:41: error: 'input_idx' was not declared in this scope
+               err = lazy_rec_eval(self, input_idx, one, zero);
+                                         ^
+In file included from D:\Anaconda\include/Python.h:80:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/object.h:774:30: error: 'PyObject' has no member named 'ob_refcnt'
+         --((PyObject*)(op))->ob_refcnt != 0)            \
+                              ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:679:11: note: in expansion of macro 'Py_DECREF'
+           Py_DECREF(rval);
+           ^
+D:\Anaconda\include/object.h:774:30: error: 'PyObject' has no member named 'ob_refcnt'
+         --((PyObject*)(op))->ob_refcnt != 0)            \
+                              ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:688:7: note: in expansion of macro 'Py_DECREF'
+       Py_DECREF(rval);
+       ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:695:33: error: 'struct CLazyLinker' has no member named 'node_n_inputs'
+       for (int i = 0; i < self->node_n_inputs[owner_idx]; ++i)
+                                 ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:697:22: error: expected ';' before 'input_idx'
+           Py_ssize_t input_idx = self->node_inputs[owner_idx][i];
+                      ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:698:35: error: 'input_idx' was not declared in this scope
+           if (!self->var_computed[input_idx])
+                                   ^
+In file included from D:\Anaconda\include/Python.h:56:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:703:38: error: 'input_idx' was not declared in this scope
+           assert (self->var_computed[input_idx]);
+                                      ^
+In file included from D:\Anaconda\include/Python.h:80:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/object.h:774:30: error: 'PyObject' has no member named 'ob_refcnt'
+         --((PyObject*)(op))->ob_refcnt != 0)            \
+                              ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:720:19: note: in expansion of macro 'Py_DECREF'
+                   Py_DECREF(rval); //ignore a return of None
+                   ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:746:29: error: 'struct CLazyLinker' has no member named 'node_n_outputs'
+   for (int i = 0; i < self->node_n_outputs[owner_idx]; ++i)
+                             ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:746:44: error: 'owner_idx' was not declared in this scope
+   for (int i = 0; i < self->node_n_outputs[owner_idx]; ++i)
+                                            ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:748:32: error: 'struct CLazyLinker' has no member named 'node_outputs'
+       self->var_computed[self->node_outputs[owner_idx][i]] = 1;
+                                ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:754:33: error: 'struct CLazyLinker' has no member named 'node_n_inputs'
+       for (int i = 0; i < self->node_n_inputs[owner_idx]; ++i)
+                                 ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:754:47: error: 'owner_idx' was not declared in this scope
+       for (int i = 0; i < self->node_n_inputs[owner_idx]; ++i)
+                                               ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:757:22: error: expected ';' before 'i_idx'
+           Py_ssize_t i_idx = self->node_inputs[owner_idx][i];
+                      ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:758:36: error: 'i_idx' was not declared in this scope
+           if (!self->var_has_owner[i_idx])
+                                    ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:761:37: error: 'struct CLazyLinker' has no member named 'n_output_vars'
+           for (int j = 0; j < self->n_output_vars; ++j)
+                                     ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:763:19: error: 'i_idx' was not declared in this scope
+               if (i_idx == self->output_vars[j])
+                   ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:763:34: error: 'struct CLazyLinker' has no member named 'output_vars'
+               if (i_idx == self->output_vars[j])
+                                  ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:771:37: error: 'struct CLazyLinker' has no member named 'n_dependencies'
+           for (int j = 0; j < self->n_dependencies[i_idx]; ++j)
+                                     ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:771:52: error: 'i_idx' was not declared in this scope
+           for (int j = 0; j < self->n_dependencies[i_idx]; ++j)
+                                                    ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:773:45: error: 'struct CLazyLinker' has no member named 'dependencies'
+               if (!self->var_computed[self->dependencies[i_idx][j]])
+                                             ^
+In file included from D:\Anaconda\include/Python.h:80:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/object.h:769:24: error: 'PyObject' has no member named 'ob_refcnt'
+     ((PyObject*)(op))->ob_refcnt++)
+                        ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:781:11: note: in expansion of macro 'Py_INCREF'
+           Py_INCREF(Py_None);
+           ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:782:54: error: 'i_idx' was not declared in this scope
+           err = PyList_SetItem(self->var_value_cells[i_idx], 0, Py_None);
+                                                      ^
+In file included from D:\Anaconda\include/Python.h:80:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/object.h:774:30: error: 'PyObject' has no member named 'ob_refcnt'
+         --((PyObject*)(op))->ob_refcnt != 0)            \
+                              ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:791:3: note: in expansion of macro 'Py_DECREF'
+   Py_DECREF(rval);
+   ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:793:31: error: 'owner_idx' was not declared in this scope
+   set_position_of_error(self, owner_idx);
+                               ^
+In file included from D:\Anaconda\include/Python.h:80:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp: In function 'PyObject* CLazyLinker_call(PyObject*, PyObject*, PyObject*)':
+D:\Anaconda\include/object.h:769:24: error: 'PyObject' has no member named 'ob_refcnt'
+     ((PyObject*)(op))->ob_refcnt++)
+                        ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:817:3: note: in expansion of macro 'Py_INCREF'
+   Py_INCREF(Py_None);
+   ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:822:7: error: 'Py_ssize_t' was not declared in this scope
+       Py_ssize_t n_pre_call_clear = PyList_Size(self->pre_call_clear);
+       ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:824:27: error: 'n_pre_call_clear' was not declared in this scope
+       for (int i = 0; i < n_pre_call_clear; ++i)
+                           ^
+In file included from D:\Anaconda\include/Python.h:80:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/object.h:769:24: error: 'PyObject' has no member named 'ob_refcnt'
+     ((PyObject*)(op))->ob_refcnt++)
+                        ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:827:11: note: in expansion of macro 'Py_INCREF'
+           Py_INCREF(Py_None);
+           ^
+D:\Anaconda\include/object.h:769:24: error: 'PyObject' has no member named 'ob_refcnt'
+     ((PyObject*)(op))->ob_refcnt++)
+                        ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:836:15: note: in expansion of macro 'Py_INCREF'
+               Py_INCREF(one);
+               ^
+D:\Anaconda\include/object.h:769:24: error: 'PyObject' has no member named 'ob_refcnt'
+     ((PyObject*)(op))->ob_refcnt++)
+                        ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:841:15: note: in expansion of macro 'Py_INCREF'
+               Py_INCREF(zero);
+               ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:846:33: error: 'struct CLazyLinker' has no member named 'n_output_vars'
+       for (int i = 0; i < self->n_output_vars && (!err); ++i)
+                                 ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:848:43: error: 'struct CLazyLinker' has no member named 'output_vars'
+           err = lazy_rec_eval(self, self->output_vars[i], one, zero);
+                                           ^
+In file included from D:\Anaconda\include/Python.h:56:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:854:25: error: 'struct CLazyLinker' has no member named 'n_output_vars'
+           assert (self->n_output_vars >= self->n_updates);
+                         ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:854:48: error: 'struct CLazyLinker' has no member named 'n_updates'
+           assert (self->n_output_vars >= self->n_updates);
+                                                ^
+In file included from D:\Anaconda\include/Python.h:80:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/object.h:774:30: error: 'PyObject' has no member named 'ob_refcnt'
+         --((PyObject*)(op))->ob_refcnt != 0)            \
+                              ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:855:11: note: in expansion of macro 'Py_DECREF'
+           Py_DECREF(rval);
+           ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:856:35: error: 'struct CLazyLinker' has no member named 'n_output_vars'
+           rval = PyList_New(self->n_output_vars);
+                                   ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:856:48: error: 'PyList_New' cannot be used as a function
+           rval = PyList_New(self->n_output_vars);
+                                                ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:857:38: error: 'struct CLazyLinker' has no member named 'n_output_vars'
+           for (int i = 0; i < (self->n_output_vars); ++i)
+                                      ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:859:26: error: expected ';' before 'src'
+               Py_ssize_t src = self->output_vars[i];
+                          ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:860:70: error: 'src' was not declared in this scope
+               PyObject * item = PyList_GetItem(self->var_value_cells[src], 0);
+                                                                      ^
+In file included from D:\Anaconda\include/Python.h:80:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/object.h:769:24: error: 'PyObject' has no member named 'ob_refcnt'
+     ((PyObject*)(op))->ob_refcnt++)
+                        ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:870:15: note: in expansion of macro 'Py_INCREF'
+               Py_INCREF(item);
+               ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:878:37: error: 'struct CLazyLinker' has no member named 'n_updates'
+           for (int i = 0; i < self->n_updates; ++i)
+                                     ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:880:58: error: 'struct CLazyLinker' has no member named 'n_output_vars'
+               PyObject* tmp = PyList_GetItem(rval, self->n_output_vars - self->n_updates + i);
+                                                          ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:880:80: error: 'struct CLazyLinker' has no member named 'n_updates'
+               PyObject* tmp = PyList_GetItem(rval, self->n_output_vars - self->n_updates + i);
+                                                                                ^
+In file included from D:\Anaconda\include/Python.h:80:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/object.h:769:24: error: 'PyObject' has no member named 'ob_refcnt'
+     ((PyObject*)(op))->ob_refcnt++)
+                        ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:881:15: note: in expansion of macro 'Py_INCREF'
+               Py_INCREF(tmp);
+               ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:882:26: error: expected ';' before 'dst'
+               Py_ssize_t dst = self->update_storage[i];
+                          ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:883:52: error: 'dst' was not declared in this scope
+               PyList_SetItem(self->var_value_cells[dst], 0, tmp);
+                                                    ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:895:12: error: 'Py_ssize_t' was not declared in this scope
+       for (Py_ssize_t i = 0; i < self->n_vars; ++i)
+            ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:895:30: error: 'i' was not declared in this scope
+       for (Py_ssize_t i = 0; i < self->n_vars; ++i)
+                              ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:900:37: error: 'struct CLazyLinker' has no member named 'n_output_vars'
+           for (int j = 0; j < self->n_output_vars; ++j)
+                                     ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:902:30: error: 'struct CLazyLinker' has no member named 'output_vars'
+               if (i == self->output_vars[j])
+                              ^
+In file included from D:\Anaconda\include/Python.h:80:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+D:\Anaconda\include/object.h:769:24: error: 'PyObject' has no member named 'ob_refcnt'
+     ((PyObject*)(op))->ob_refcnt++)
+                        ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:910:11: note: in expansion of macro 'Py_INCREF'
+           Py_INCREF(Py_None);
+           ^
+D:\Anaconda\include/object.h:774:30: error: 'PyObject' has no member named 'ob_refcnt'
+         --((PyObject*)(op))->ob_refcnt != 0)            \
+                              ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:914:3: note: in expansion of macro 'Py_DECREF'
+   Py_DECREF(one);
+   ^
+D:\Anaconda\include/object.h:774:30: error: 'PyObject' has no member named 'ob_refcnt'
+         --((PyObject*)(op))->ob_refcnt != 0)            \
+                              ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:915:3: note: in expansion of macro 'Py_DECREF'
+   Py_DECREF(zero);
+   ^
+D:\Anaconda\include/object.h:774:30: error: 'PyObject' has no member named 'ob_refcnt'
+         --((PyObject*)(op))->ob_refcnt != 0)            \
+                              ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:918:7: note: in expansion of macro 'Py_DECREF'
+       Py_DECREF(rval);
+       ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp: At global scope:
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:977:1: error: too many initializers for 'PyMemberDef'
+ };
+ ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:977:1: error: too many initializers for 'PyMemberDef'
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:977:1: error: too many initializers for 'PyMemberDef'
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:977:1: error: too many initializers for 'PyMemberDef'
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:977:1: error: too many initializers for 'PyMemberDef'
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:977:1: error: too many initializers for 'PyMemberDef'
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:977:1: error: too many initializers for 'PyMemberDef'
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1023:1: error: invalid conversion from 'int' to '_typeobject*' [-fpermissive]
+ };
+ ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1023:1: error: cannot convert 'const char*' to 'printfunc {aka int (*)(_object*, __sFILE64*, int)}' in initialization
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:987:11: error: invalid conversion from 'long unsigned int' to 'getattrfunc {aka _object* (*)(_object*, char*)}' [-fpermissive]
+     sizeof(CLazyLinker), /*tp_basicsize*/
+           ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1023:1: error: invalid conversion from 'void (*)(PyObject*) {aka void (*)(_object*)}' to 'cmpfunc {aka int (*)(_object*, _object*)}' [-fpermissive]
+ };
+ ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1023:1: error: cannot convert 'PyObject* (*)(PyObject*, PyObject*, PyObject*) {aka _object* (*)(_object*, _object*, _object*)}' to 'PyBufferProcs*' in initialization
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1023:1: error: invalid conversion from 'long int' to 'richcmpfunc {aka _object* (*)(_object*, _object*, int)}' [-fpermissive]
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1023:1: error: cannot convert 'const char*' to 'getiterfunc {aka _object* (*)(_object*)}' in initialization
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1023:1: error: cannot convert 'PyMemberDef*' to 'descrsetfunc {aka int (*)(_object*, _object*, _object*)}' in initialization
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1023:1: error: cannot convert 'PyGetSetDef*' to 'initproc {aka int (*)(_object*, _object*, _object*)}' in initialization
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1023:1: error: cannot convert 'initproc {aka int (*)(_object*, _object*, _object*)}' to 'PyObject* {aka _object*}' in initialization
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1023:1: error: cannot convert 'PyObject* (*)(PyTypeObject*, PyObject*, PyObject*) {aka _object* (*)(_typeobject*, _object*, _object*)}' to 'PyObject* {aka _object*}' in initialization
+In file included from D:\Anaconda\include/Python.h:80:0,
+                 from C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1:
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp: In function 'void initlazylinker_ext()':
+D:\Anaconda\include/object.h:769:24: error: 'PyObject' has no member named 'ob_refcnt'
+     ((PyObject*)(op))->ob_refcnt++)
+                        ^
+C:\Users\Lyuan\AppData\Local\Theano\compiledir_Windows-8-6.2.9200-Intel64_Family_6_Model_58_Stepping_9_GenuineIntel-2.7.10-64\lazylinker_ext\mod.cpp:1074:5: note: in expansion of macro 'Py_INCREF'
+     Py_INCREF(&lazylinker_ext_CLazyLinkerType);
+     ^
+
