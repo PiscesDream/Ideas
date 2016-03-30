@@ -1,30 +1,30 @@
-git rm --cached ./CI/eco_protection/log.dat        
-git rm --cached ./CI/eco_protection/__log.dat 
-git rm --cached ./ML/adder/classifiers/adder_00704.dat 
-git rm --cached ./ML/adder/mnist_cnn_raw.dat 
-git rm --cached ./ML/auto_game/double11/ban.dat 
-git rm --cached ./ML/auto_game/double11/list.dat 
-git rm --cached ./ML/Bool_fun_est/datas.dat 
-git rm --cached ./ML/Bool_fun_est/iterate.dat 
-git rm --cached ./ML/China_daily/china_daily.dat 
-git rm --cached ./ML/China_daily/shrinked_200_3.dat 
-git rm --cached ./ML/China_daily/shrinked_200_4.dat 
-git rm --cached ./ML/China_daily/stoplist.dat 
-git rm --cached ./ML/China_daily/test.dat 
-git rm --cached ./ML/co-evaluate/data.dat 
-git rm --cached ./ML/guess_next/cls/077_10.dat 
-git rm --cached ./ML/guess_next/cls/079.dat 
-git rm --cached ./ML/guess_next/cls/088.dat 
-git rm --cached ./ML/guess_next/cls/save.dat 
-git rm --cached ./ML/guess_next/cls/wired.dat 
-git rm --cached ./ML/guess_next/origin.dat 
-git rm --cached ./ML/guess_next/save.dat 
-git rm --cached ./ML/lines/line234.dat 
-git rm --cached ./ML/lines/lines.dat 
-git rm --cached ./ML/lottery/fast3/data_20140701001_2014103104.dat 
-git rm --cached ./ML/most_act/mnist_cnn_raw.dat 
-git rm --cached ./ML/tic-tac-toe/iterate.dat 
-git rm --cached ./ML/_generative_nn/ann.dat 
-git rm --cached ./ML/_generative_nn/mnist_cnn_raw.dat 
-git rm --cached ./Proj/2048/self_learning/iterate.dat 
-git rm --cached ./Proj/2048/test_with_f/iterate.dat
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch ./CI/eco_protection/log.dat        '
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch ./CI/eco_protection/__log.dat '
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch ./ML/adder/classifiers/adder_00704.dat '
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch ./ML/adder/mnist_cnn_raw.dat '
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch ./ML/auto_game/double11/ban.dat '
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch ./ML/auto_game/double11/list.dat '
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch ./ML/Bool_fun_est/datas.dat '
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch ./ML/Bool_fun_est/iterate.dat '
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch ./ML/China_daily/china_daily.dat '
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch ./ML/China_daily/shrinked_200_3.dat '
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch ./ML/China_daily/shrinked_200_4.dat '
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch ./ML/China_daily/stoplist.dat '
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch ./ML/China_daily/test.dat '
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch ./ML/co-evaluate/data.dat '
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch ./ML/guess_next/cls/077_10.dat '
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch ./ML/guess_next/cls/079.dat '
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch ./ML/guess_next/cls/088.dat '
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch ./ML/guess_next/cls/save.dat '
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch ./ML/guess_next/cls/wired.dat '
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch ./ML/guess_next/origin.dat '
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch ./ML/guess_next/save.dat '
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch ./ML/lines/line234.dat '
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch ./ML/lines/lines.dat '
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch ./ML/lottery/fast3/data_20140701001_2014103104.dat '
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch ./ML/most_act/mnist_cnn_raw.dat '
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch ./ML/tic-tac-toe/iterate.dat '
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch ./ML/_generative_nn/ann.dat '
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch ./ML/_generative_nn/mnist_cnn_raw.dat '
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch ./Proj/2048/self_learning/iterate.dat '
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch ./Proj/2048/test_with_f/iterate.dat'
