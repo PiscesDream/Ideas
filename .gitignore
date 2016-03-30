@@ -4,3 +4,5 @@
 *.npy
 *.dat
 *.jpg
+*.model
+*.log
