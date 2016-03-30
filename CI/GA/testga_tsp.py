@@ -4,7 +4,10 @@ from time import sleep
 from numpy import *
 import ga3
 import ga4
+<<<<<<< HEAD
 import ga5
+=======
+>>>>>>> c6871fc3fcda7f1717c52c8983a736ed830911cb
 
 DataSize = 0
 data = 0 
@@ -166,7 +169,11 @@ def tsp_crossover_HGA(father, mother):
         else:
             child.append(mother[ind+1])
         ind += 1
+<<<<<<< HEAD
     return child, father
+=======
+    return child
+>>>>>>> c6871fc3fcda7f1717c52c8983a736ed830911cb
 
    
 def tsp_crossover_mixed(father, mather):
@@ -204,8 +211,14 @@ if __name__ == '__main__':
 
 #    def __init__(self, fitness_f, terminator, generation_size, genertaion_init, 
 #        crossover_vs_survival, crossover_f, mutation_rate, mutation_f, plot = False, plot_f = None):
+<<<<<<< HEAD
     MyGA = ga5.GA(tsp_fitness_f, {'fitness_thresold':0}, 2000, tsp_gen_init,
                         0.75, tsp_crossover_sgc, 0.15, tsp_mutation_f, True, tsp_plot_f, 1, lambda a,b: a<b,
           cores = 4)
+=======
+    MyGA = ga3.GA(tsp_fitness_f, {'fitness_thresold':0}, 20000, tsp_gen_init,
+                        0.95, tsp_crossover_HGA, 0.05, tsp_mutation_f, True, tsp_plot_f, 10, lambda a,b: a<b,
+          multiprocess = True)
+>>>>>>> c6871fc3fcda7f1717c52c8983a736ed830911cb
     MyGA.fit()
 
