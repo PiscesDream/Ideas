@@ -7,3 +7,5 @@
 *.model
 *.log
 *.dat
+*.npz
+*.dat
