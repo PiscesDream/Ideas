@@ -10,3 +10,5 @@
 *.npz
 *.dat
 *.npy
+Data/
+Models/
