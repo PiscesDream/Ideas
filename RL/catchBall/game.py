@@ -94,11 +94,13 @@ class IntervalGenerator(object):
         return np.concatenate([newrow, cur_state[:-2], cur_state[-1:]], 0)
 
 
+
+
 import sys
 sys.path.insert(0, '/home/shaofan/.local/lib/python2.7/site-packages')
 import keras
 from keras.models import Sequential, Model
-keras.backend.theano_backend._set_device('dev1')
+keras.backend.theano_backend._set_device('dev0')
 from keras.layers import Dense, Activation
 
 class Learner(object):
@@ -108,13 +110,20 @@ class Learner(object):
         self.ys = []
 
         model = Sequential()
-        model.add(Dense(100, input_shape=input_shape))
+        model.add(Dense(500, input_shape=input_shape))
         model.add(Activation('relu'))
-        model.add(Dense(100))
+        model.add(Dense(500))
+        model.add(Activation('relu'))
+        model.add(Dense(500))
+        model.add(Activation('relu'))
+        model.add(Dense(500))
+        model.add(Activation('relu'))
+        model.add(Dense(500))
         model.add(Activation('relu'))
         model.add(Dense(output_dim))
+        model.add(Activation('softmax'))
 #       model.compile(loss='categorical_crossentropy', optimizer='rmsprop')
-        model.compile(loss='mse', optimizer='rmsprop')
+        model.compile(loss='mse', optimizer='adam')
 
         self.model = model
         
@@ -144,15 +153,17 @@ class Learner(object):
             # raise Exception
         
 if __name__ == '__main__':
+    boxh, boxw = 20, 10
+
     game = DroppingGame(
-            box_size=(10, 10), 
+            box_size=(boxh, boxw), 
             per_range=5, 
-            cat_len=3, 
+            cat_len=4,
             max_int=np.inf, 
             rewards=(10, -10), 
             robj_gen=IntervalGenerator(2),)
 
-    game.play(Learner((110,), 3)) 
+    game.play(Learner((boxw*(boxh+1),), 3)) 
 
 
 
